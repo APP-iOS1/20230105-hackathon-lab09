@@ -14,68 +14,103 @@ struct BucketListView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-                    Button {
-                        year -= 1
-                    } label: {
-                        Image(systemName:"arrowtriangle.left.fill")
-                    }
-                    Text(String(year))
-                        .padding(.horizontal, Screen.maxWidth * 0.2)
-                    Button {
-                        if year < 2023 {
-                            year += 1
+            ZStack {
+                VStack {
+                    HStack {
+                        Button {
+                            year -= 1
+                            bucketStore.isLoading = true
+                            Task {
+                                (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+                                bucketStore.isLoading = false
+                            }
+                        } label: {
+                            Image(systemName:"arrowtriangle.left.fill")
                         }
-                    } label: {
-                        Image(systemName:"arrowtriangle.right.fill")
+                        Text(String(year))
+                            .padding(.horizontal, Screen.maxWidth * 0.2)
+                        Button {
+                            if year < 2023 {
+                                year += 1
+                            }
+                            bucketStore.isLoading = true
+                            Task {
+                                (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+                                bucketStore.isLoading = false
+                            }
+                        } label: {
+                            Image(systemName:"arrowtriangle.right.fill")
+                        }
+                        
                     }
-
+                    .font(.custom("Pretendard-Regular", size: 25))
+                    .padding(.vertical, Screen.maxWidth * 0.07)
+                    if bucketStore.isLoading {
+                        Spacer()
+                        ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle(tint: Color(uiColor: UIColor(named: "AccentColor")!)))
+                            .scaleEffect(2)
+                        Spacer()
+                    } else {
+                        ScrollView {
+                            VStack(alignment: .leading, spacing: 20) {
+                                ForEach(bucketStore.bucket) { bucket in
+                                    NavigationLink {
+                                        BucketDetailListView(bucketStore: bucketStore, detailIdList: bucket.detailId, bucketId: bucket.id, year: $year)
+                                    } label: {
+                                        HStack {
+                                            Text(bucket.icon)
+                                                .font(.custom("Pretendard-Regular", size: 25))
+                                            
+                                                .padding(.trailing,Screen.maxWidth * 0.01)
+                                            Text(bucket.title)
+                                                .font(.custom("Pretendard-Regular", size: 18))
+                                            Spacer()
+                                            Image(systemName: "ellipsis")
+                                                .foregroundColor(.gray)
+                                                .padding(.trailing, Screen.maxWidth * 0.05)
+                                        }
+                                        .padding(.leading, Screen.maxWidth * 0.06)
+                                        .frame(width: Screen.maxWidth * 0.87, height: Screen.maxHeight * 0.09, alignment: .leading)
+                                        .background {
+                                            bucket.isCheck ? Color("19") : Color("cellColor")
+                                        }
+                                        .cornerRadius(20)
+                                        //                                .overlay(RoundedRectangle(cornerRadius: 30)
+                                        //                                    .stroke(bucket.isCheck ? Color.black : Color.gray, lineWidth: 3))
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
                 }
-                .font(.custom("Pretendard-Regular", size: 25))
-                .padding(.vertical, Screen.maxWidth * 0.07)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background {
+                    //                Color(hex: "FDFCED")
+                    Color("bgColor")
+                }
+                .navigationBarItems(trailing:Button(action: {
+                    isClickMarker.toggle()
+                }, label: {
+                    Image(systemName: "plus")
+                        .bold()
+                }))
+                .navigationBarTitle("나의 별킷리스트")
+                .sheet(isPresented: $isClickMarker) {
+                    BucketListAddView(isClickMarker: $isClickMarker)
+                        .presentationDetents([.fraction(0.8)])
+                }
                 
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 20) {
-                        ForEach(bucketStore.bucket) { bucket in
-                            HStack {
-                                Text(bucket.icon)
-                                    .font(.custom("Pretendard-Regular", size: 25))
 
-                                    .padding(.trailing,Screen.maxWidth * 0.01)
-                                Text(bucket.title)
-                                    .font(.custom("Pretendard-Regular", size: 22))
-                            }
-                            .padding(.leading, Screen.maxWidth * 0.06)
-                            .frame(width: Screen.maxWidth * 0.8, height: Screen.maxHeight * 0.09, alignment: .leading)
-                            .background {
-                                Color("cellColor")
-                            }
-                            .cornerRadius(20)
-                        }
-                    }
+            }
+            .onAppear {
+                bucketStore.isLoading = true
+                Task {
+                    UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
+                    (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+                    bucketStore.isLoading = false
                 }
-            }
-            .background {
-                Color("bgColor")
-                    .frame(width: Screen.maxWidth, height: Screen.maxHeight)
-            }
-            .navigationBarItems(trailing:Button(action: {
-                isClickMarker.toggle()
-            }, label: {
-                Image(systemName: "plus")
-                    .bold()
-            }))
-            .navigationBarTitle("나의 별킷리스트")
-            .sheet(isPresented: $isClickMarker) {
-                BucketListAddView(isClickMarker: $isClickMarker)
-                    .presentationDetents([.fraction(0.8)])
-            }
-        } // NavigationView
-        .onAppear {
-            Task {
-                UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
-                (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucket()
             }
         }
     }
