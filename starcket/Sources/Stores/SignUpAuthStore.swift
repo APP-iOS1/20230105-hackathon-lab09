@@ -265,4 +265,4 @@ class SignUpAuthStore: ObservableObject {
     }
 
     
-    }
+}
