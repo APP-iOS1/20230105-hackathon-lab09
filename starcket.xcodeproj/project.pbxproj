@@ -23,6 +23,7 @@
 		80826E642966E04E00737B64 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E632966E04E00737B64 /* MoreView.swift */; };
 		80826E682966E42F00737B64 /* PurchasePremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E672966E42F00737B64 /* PurchasePremiumView.swift */; };
 		80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E692966E4A100737B64 /* EditProfileView.swift */; };
+		80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E6B2966E7EE00737B64 /* SendOpinion.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		80826E632966E04E00737B64 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		80826E672966E42F00737B64 /* PurchasePremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePremiumView.swift; sourceTree = "<group>"; };
 		80826E692966E4A100737B64 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		80826E6B2966E7EE00737B64 /* SendOpinion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOpinion.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				80826E692966E4A100737B64 /* EditProfileView.swift */,
 				80826E672966E42F00737B64 /* PurchasePremiumView.swift */,
 				80826E632966E04E00737B64 /* MoreView.swift */,
+				80826E6B2966E7EE00737B64 /* SendOpinion.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
 				80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */,
+				80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
 				80826E5F2966D8CF00737B64 /* SafariView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
