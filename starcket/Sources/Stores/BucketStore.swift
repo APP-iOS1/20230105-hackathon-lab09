@@ -12,16 +12,18 @@ import FirebaseFirestore
 class BucketStore: ObservableObject {
 	@Published var bucket: [Bucket] = []
 	@Published var bucketIdList: [String] = []
+    @Published var starPosArr: [CGSize] = []
 
 	let database = Firestore.firestore()
 	
 	// Bucket Data 가져오기
-	func fetchBucket() async throws -> (data: [Bucket], bucketIdList: [String]) {
-		guard let userId = UserDefaults.standard.string(forKey: "userIdToken") else { return (data: [], bucketIdList: []) }
+    func fetchBucket() async throws -> (data: [Bucket], bucketIdList: [String], data3:[CGSize]) {
+        guard let userId = UserDefaults.standard.string(forKey: "userIdToken") else { return (data: [], bucketIdList: [], data3: []) }
 		
 		let docRef = try await database.collection("User").document(userId).getDocument()
 		
 		var data = [Bucket]()
+        var data3 = [CGSize]()
 		
 		let docData = docRef.data()
 		
@@ -45,9 +47,13 @@ class BucketStore: ObservableObject {
 			let createdAt: Timestamp = docData["createdAt"] as! Timestamp
 			
             data.append(Bucket(id: id, userId: userId, detailId: detailId, icon: icon, title: title, isCheck: isCheck, isFloat: isFloat, pos: pos, shape: shape, updatedAt: updatedAt.dateValue(), createdAt: createdAt.dateValue()))
+            
+            if isCheck == true && isFloat == true {
+                data3.append(CGSize(width: pos[0], height: pos[1]))
+            }
 		}
 		
-		return (data, bucketIdList)
+		return (data, bucketIdList, data3)
 	}
 	
 	// Bucket Data 생성
@@ -96,6 +102,29 @@ class BucketStore: ObservableObject {
 			}
 		})
 	}
+    
+    // 스타를 홈화면에 추가한뒤 값을 변경해주는 메서드
+        func updateStar(_ id: String, isFloat: Bool, shape: Int) {
+            database.collection("Bucket").document(id).updateData( [
+                "isFloat": isFloat,
+                "shape": shape
+            ], completion: { error in
+                if let error {
+                    print(error.localizedDescription)
+                }
+            })
+        }
+    
+    func updateStarPos(_ id: String, _ x:Double, _ y:Double ) {
+        database.collection("Bucket").document(id).updateData( [
+            "pos": [x,y]
+        ], completion: { error in
+            if let error {
+                print(error.localizedDescription)
+            }
+        })
+    }
+    
 	
 	// 유저의 BucketId 필드에도 저장
 	func updateUserByBucketId(_ userId: String, _ bucketId: String) {

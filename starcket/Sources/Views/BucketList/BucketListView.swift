@@ -44,12 +44,12 @@ struct BucketListView: View {
 			}
 		}
 		.padding()
-		.onAppear {
-			Task {
-				UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
-				(bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucket()
-			}
-		}
+//		.onAppear {
+//			Task {
+//				UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
+//				(bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucket()
+//			}
+//		}
 	}
 
 }
