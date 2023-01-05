@@ -27,7 +27,7 @@ struct BucketDetailListView: View {
                                 Text(bucket.title)
                                     .font(.custom("Pretendard-Regular", size: 22))
                                 Spacer()
-                                Text("\(bucket.createdAt)")
+                                Text("\(bucket.createdDate)")
                                     .font(.custom("Pretendard-Regular", size: 18))
                                     .foregroundColor(.gray)
                             }
@@ -71,7 +71,7 @@ struct BucketDetailListView: View {
                         BucketListDetailAddView()
                     } label: {
                         Image(systemName: "plus.circle")
-                            .font(.system(size: 25, weight: .semibold))
+                            .font(.system(size: 22, weight: .semibold))
                     }
 
                 }

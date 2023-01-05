@@ -17,4 +17,15 @@ struct BucketDetail: Codable, Identifiable {
 	var rating: Int			// 만족도
 	var updatedAt: Date		// 수정일
 	let createdAt: Date		// 생성일
+    
+    var createdDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.timeZone = TimeZone(abbreviation: "KST")
+        dateFormatter.dateFormat = "yyyy-MM-dd" // "yyyy-MM-dd HH:mm:ss"
+        
+        let dateCreatedAt = createdAt
+        
+        return dateFormatter.string(from: dateCreatedAt)
+    }
 }

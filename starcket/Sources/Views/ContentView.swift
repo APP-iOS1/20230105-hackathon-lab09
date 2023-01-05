@@ -12,7 +12,7 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
 //            SignInView()
             TabView(selection: $tabSelection) {
                 HomeView()
@@ -66,7 +66,7 @@ struct ContentView: View {
 //                SignInView()
 //            }
        
-        }
+//        }
     }
 }
     
