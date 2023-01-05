@@ -48,6 +48,7 @@ class AuthStore: ObservableObject {
     @Published var state: SignInState = .splash // 로그인 상태
     @Published var loginState: LogInState = .none //로그인 성공 여부
     @Published var loginPlatform: LoginPlatform = .none
+    @Published var isLoggedInFailed: Bool = false
     
     //let userVM: UserViewModel = UserViewModel()
     
@@ -71,22 +72,24 @@ class AuthStore: ObservableObject {
         }
     }
     
-    // 이메일 로그인
-    func emailLoginUser(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password) { result, err in
-            if let err = err {
-                print("Failed due to error:", err)
-                self.loginState = .fail
-                return
-            }
-            // 이메일 로그인 성공 시
-            self.loginState = .success //로그인 성공 여부
-            print("Successfully logged in with ID: \(result?.user.uid ?? "")")
-            // UserDefaults에 저장
-            UserDefaults.standard.set(result?.user.uid, forKey: "userIdToken")
-            
-        }
-    }
+//    // 이메일 로그인
+//    func emailLoginUser(email: String, password: String) {
+//        Auth.auth().signIn(withEmail: email, password: password) { result, err in
+//            if let err = err {
+//                print("Failed due to error:", err)
+//                self.loginState = .fail
+//                //self.isLoggedInFailed = true
+//                return
+//            }
+//            // 이메일 로그인 성공 시
+//            self.loginState = .success //로그인 성공 여부
+//            print("Successfully logged in with ID: \(result?.user.uid ?? "")")
+//            // UserDefaults에 저장
+//            UserDefaults.standard.set(result?.user.uid, forKey: "userIdToken")
+//
+//        }
+//    }
+    
     
     // 이메일 로그아웃
     func emailLogout() {

@@ -40,6 +40,7 @@ struct starcketApp: App {
                     }
                 }
                 .environmentObject(authStore)
+                .environmentObject(SignUpAuthStore())
         }
     }
 }

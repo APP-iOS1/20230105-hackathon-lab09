@@ -26,6 +26,14 @@
 				<string>com.googleusercontent.apps.910402792961-3b8gsqbkftuhmsck48ede6inb4bv86hd</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kakao{KAKAO_NAVTIVE_APP_KEY}</string>
+			</array>
+		</dict>
 	</array>
 	<key>UIAppFonts</key>
 	<array>
