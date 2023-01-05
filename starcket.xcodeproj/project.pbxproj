@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80826E382966A3A600737B64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80826E372966A3A600737B64 /* GoogleService-Info.plist */; };
+		80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3A2966A45F00737B64 /* GoogleSignIn */; };
+		80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3C2966A45F00737B64 /* GoogleSignInSwift */; };
+		80826E3F2966A55000737B64 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E3E2966A55000737B64 /* AuthStore.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -31,10 +35,11 @@
 		C45C0B4E2966886D007BFE58 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4D2966886D007BFE58 /* FirebaseFirestore */; };
 		C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */; };
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
-		C45C0B5429668E0E007BFE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C45C0B5329668E0D007BFE58 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80826E372966A3A600737B64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80826E3E2966A55000737B64 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +71,6 @@
 		C45C0B4429665D73007BFE58 /* ETC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETC.swift; sourceTree = "<group>"; };
 		C45C0B46296684C5007BFE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45C0B48296686EB007BFE58 /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
-		C45C0B5329668E0D007BFE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */,
 				C45C0B4C2966886D007BFE58 /* FirebaseAuth in Frameworks */,
 				C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */,
+				80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */,
 				C45C0B4E2966886D007BFE58 /* FirebaseFirestore in Frameworks */,
 				C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -104,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B20296655BB007BFE58 /* Info.plist */,
-				C45C0B5329668E0D007BFE58 /* GoogleService-Info.plist */,
+				80826E372966A3A600737B64 /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
@@ -152,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B48296686EB007BFE58 /* BucketStore.swift */,
+				80826E3E2966A55000737B64 /* AuthStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -319,6 +326,8 @@
 				C45C0B4D2966886D007BFE58 /* FirebaseFirestore */,
 				C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */,
 				C45C0B512966886D007BFE58 /* FirebaseStorage */,
+				80826E3A2966A45F00737B64 /* GoogleSignIn */,
+				80826E3C2966A45F00737B64 /* GoogleSignInSwift */,
 			);
 			productName = starcket;
 			productReference = C45C0AF8296653A1007BFE58 /* starcket.app */;
@@ -350,6 +359,7 @@
 			mainGroup = C45C0AEF296653A1007BFE58;
 			packageReferences = (
 				C45C0B4A2966886D007BFE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = C45C0AF9296653A1007BFE58 /* Products */;
 			projectDirPath = "";
@@ -365,9 +375,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80826E382966A3A600737B64 /* GoogleService-Info.plist in Resources */,
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
-				C45C0B5429668E0E007BFE58 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +401,7 @@
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
 				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
+				80826E3F2966A55000737B64 /* AuthStore.swift in Sources */,
 				C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
@@ -602,6 +613,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C45C0B4A2966886D007BFE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -613,6 +632,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		80826E3A2966A45F00737B64 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		80826E3C2966A45F00737B64 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		C45C0B4B2966886D007BFE58 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C45C0B4A2966886D007BFE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
