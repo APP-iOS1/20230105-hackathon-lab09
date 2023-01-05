@@ -10,6 +10,9 @@
 		1A3AE9D82966A3090024DBB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A3AE9D72966A3090024DBB1 /* GoogleService-Info.plist */; };
 		1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */; };
 		1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */; };
+		8B4377172966F109002D4AAB /* BucketListDetailAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */; };
+		8B4377192966F5F4002D4AAB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4377182966F5F4002D4AAB /* ImagePicker.swift */; };
+		8B43771B29671C52002D4AAB /* BucketListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43771A29671C52002D4AAB /* BucketListDetailView.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 		1A3AE9D72966A3090024DBB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListAddView.swift; sourceTree = "<group>"; };
 		1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketDetailStore.swift; sourceTree = "<group>"; };
+		8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailAddView.swift; sourceTree = "<group>"; };
+		8B4377182966F5F4002D4AAB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8B43771A29671C52002D4AAB /* BucketListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailView.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -268,6 +274,9 @@
 			children = (
 				C45C0B3C29665D2B007BFE58 /* BucketListView.swift */,
 				1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */,
+				8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */,
+				8B43771A29671C52002D4AAB /* BucketListDetailView.swift */,
+				8B4377182966F5F4002D4AAB /* ImagePicker.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -391,12 +400,15 @@
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
 				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
 				C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */,
+				8B4377192966F5F4002D4AAB /* ImagePicker.swift in Sources */,
 				C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */,
+				8B4377172966F109002D4AAB /* BucketListDetailAddView.swift in Sources */,
 				C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */,
 				C45C0B49296686EB007BFE58 /* BucketStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
+				8B43771B29671C52002D4AAB /* BucketListDetailView.swift in Sources */,
 				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
 				C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */,
