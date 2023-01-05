@@ -13,6 +13,9 @@
 		C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0B02296653A3007BFE58 /* Preview Assets.xcassets */; };
 		C45C0B1429665512007BFE58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B1329665512007BFE58 /* Constants.swift */; };
 		C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B1529665555007BFE58 /* Ex+Color.swift */; };
+		C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B2129665851007BFE58 /* BtnModifier.swift */; };
+		C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B23296659A1007BFE58 /* Bucket.swift */; };
+		C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B2729665ACC007BFE58 /* BucketDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		C45C0B1E296655A3007BFE58 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		C45C0B1F296655A3007BFE58 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		C45C0B20296655BB007BFE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C45C0B2129665851007BFE58 /* BtnModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnModifier.swift; sourceTree = "<group>"; };
+		C45C0B23296659A1007BFE58 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		C45C0B2729665ACC007BFE58 /* BucketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 		C45C0B0929665415007BFE58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C45C0B23296659A1007BFE58 /* Bucket.swift */,
+				C45C0B2729665ACC007BFE58 /* BucketDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 		C45C0B12296654BB007BFE58 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				C45C0B2129665851007BFE58 /* BtnModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -236,7 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */,
+				C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
+				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
+				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
 				C45C0B1429665512007BFE58 /* Constants.swift in Sources */,
 			);
