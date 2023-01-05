@@ -223,7 +223,7 @@ struct AnalyzeView: View {
             
             Task {
                 UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
-                (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucket()
+                (bucketStore.bucket, bucketStore.bucketIdList, bucketStore.starPosArr) = try await bucketStore.fetchBucket()
                 
                 total = CGFloat(bucketStore.bucket.count)
                 print(total)

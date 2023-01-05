@@ -54,10 +54,10 @@ class BucketDetailStore: ObservableObject {
 		let name: String = docData["name"] as? String ?? ""
 		let email: String = docData["email"] as? String ?? ""
 		let isPremium: Bool = docData["isPremium"] as? Bool ?? false
-		let updatedAt: Timestamp = docData["updatedAt"] as! Timestamp
-		let createdAt: Timestamp = docData["createdAt"] as! Timestamp
+//		let updatedAt: Timestamp = docData["updatedAt"] as! Timestamp
+//		let createdAt: Timestamp = docData["createdAt"] as! Timestamp
 		
-		data.append(User(id: id, bucketId: bucketId, detailId: detailId, name: name, email: email, isPremium: isPremium, updatedAt: updatedAt.dateValue(), createdAt: createdAt.dateValue()))
+		data.append(User(id: id, bucketId: bucketId, detailId: detailId, name: name, email: email, isPremium: isPremium))
 		
 		return data
 	}
