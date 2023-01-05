@@ -20,6 +20,9 @@
 		80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5B2966D8CF00737B64 /* SignUpStep1View.swift */; };
 		80826E612966D8CF00737B64 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5C2966D8CF00737B64 /* SignUpView.swift */; };
 		80826E622966D8CF00737B64 /* TermType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5D2966D8CF00737B64 /* TermType.swift */; };
+		80826E642966E04E00737B64 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E632966E04E00737B64 /* MoreView.swift */; };
+		80826E682966E42F00737B64 /* PurchasePremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E672966E42F00737B64 /* PurchasePremiumView.swift */; };
+		80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E692966E4A100737B64 /* EditProfileView.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 		80826E5B2966D8CF00737B64 /* SignUpStep1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep1View.swift; sourceTree = "<group>"; };
 		80826E5C2966D8CF00737B64 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		80826E5D2966D8CF00737B64 /* TermType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermType.swift; sourceTree = "<group>"; };
+		80826E632966E04E00737B64 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		80826E672966E42F00737B64 /* PurchasePremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePremiumView.swift; sourceTree = "<group>"; };
+		80826E692966E4A100737B64 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -309,6 +315,9 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B4029665D40007BFE58 /* MyPageView.swift */,
+				80826E692966E4A100737B64 /* EditProfileView.swift */,
+				80826E672966E42F00737B64 /* PurchasePremiumView.swift */,
+				80826E632966E04E00737B64 /* MoreView.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -419,8 +428,10 @@
 				C45C0B4529665D73007BFE58 /* ETC.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
+				80826E642966E04E00737B64 /* MoreView.swift in Sources */,
 				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
 				80826E612966D8CF00737B64 /* SignUpView.swift in Sources */,
+				80826E682966E42F00737B64 /* PurchasePremiumView.swift in Sources */,
 				C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */,
 				C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */,
 				80826E5E2966D8CF00737B64 /* SignUpStep2View.swift in Sources */,
@@ -428,6 +439,7 @@
 				C45C0B49296686EB007BFE58 /* BucketStore.swift in Sources */,
 				80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
+				80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
 				80826E5F2966D8CF00737B64 /* SafariView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
