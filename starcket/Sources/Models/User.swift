@@ -14,6 +14,6 @@ struct User: Codable, Identifiable {
 	var name: String		// 닉네임
 	var email: String		// 이메일
 	var isPremium: Bool		// 프리미엄 여부
-	var updateAt: Date		// 수정일
+	var updatedAt: Date		// 수정일
 	let createdAt: Date		// 생성일
 }

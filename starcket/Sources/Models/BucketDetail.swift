@@ -15,6 +15,6 @@ struct BucketDetail: Codable, Identifiable {
 	var content: String		// 내용
 	var image: String		// storage Id
 	var rating: Int			// 만족도
-	var updateAt: Date		// 수정일
+	var updatedAt: Date		// 수정일
 	let createdAt: Date		// 생성일
 }

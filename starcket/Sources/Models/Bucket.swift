@@ -16,7 +16,6 @@ struct Bucket: Codable, Identifiable {
 	var isCheck: Bool		// 달성여부
 	var pos: [Double]		// 좌표위치
 	var shape: Int			// 캐릭터 모양
-	var bgColor: Int		// 색상
-	var updateAt: Date		// 수정일
+	var updatedAt: Date		// 수정일
 	let createdAt: Date		// 생성일
 }
