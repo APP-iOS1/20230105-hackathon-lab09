@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958419E22966FC9A00CF4682 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958419E12966FC9A00CF4682 /* WidgetKit.framework */; };
+		958419E42966FC9A00CF4682 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958419E32966FC9A00CF4682 /* SwiftUI.framework */; };
+		958419E72966FC9A00CF4682 /* MyBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958419E62966FC9A00CF4682 /* MyBucket.swift */; };
+		958419EA2966FC9D00CF4682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958419E92966FC9D00CF4682 /* Assets.xcassets */; };
+		958419EC2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */; };
+		958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */; };
+		958419F02966FC9D00CF4682 /* MyBucketExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		958419F52966FD5F00CF4682 /* DeepWaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB72966BAC50028B466 /* DeepWaterWave.swift */; };
+		958419F82966FE3200CF4682 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB52966A9EE0028B466 /* WaterWave.swift */; };
+		958419F92966FE5100CF4682 /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B1529665555007BFE58 /* Ex+Color.swift */; };
 		958FCFB32966A92F0028B466 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 958FCFB22966A92D0028B466 /* GoogleService-Info.plist */; };
 		958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB52966A9EE0028B466 /* WaterWave.swift */; };
 		958FCFB82966BAC50028B466 /* DeepWaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB72966BAC50028B466 /* DeepWaterWave.swift */; };
@@ -36,7 +46,38 @@
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		958419EE2966FC9D00CF4682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45C0AF0296653A1007BFE58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 958419DE2966FC9A00CF4682;
+			remoteInfo = MyBucketExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		958419F12966FC9D00CF4682 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				958419F02966FC9D00CF4682 /* MyBucketExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyBucketExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		958419E12966FC9A00CF4682 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		958419E32966FC9A00CF4682 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		958419E62966FC9A00CF4682 /* MyBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucket.swift; sourceTree = "<group>"; };
+		958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyBucket.intentdefinition; sourceTree = "<group>"; };
+		958419E92966FC9D00CF4682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		958419EB2966FC9D00CF4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958FCFB22966A92D0028B466 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		958FCFB52966A9EE0028B466 /* WaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
 		958FCFB72966BAC50028B466 /* DeepWaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWaterWave.swift; sourceTree = "<group>"; };
@@ -74,6 +115,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		958419DC2966FC9A00CF4682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958419E42966FC9A00CF4682 /* SwiftUI.framework in Frameworks */,
+				958419E22966FC9A00CF4682 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C45C0AF5296653A1007BFE58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +138,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		958419E02966FC9A00CF4682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				958419E12966FC9A00CF4682 /* WidgetKit.framework */,
+				958419E32966FC9A00CF4682 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		958419E52966FC9A00CF4682 /* MyBucket */ = {
+			isa = PBXGroup;
+			children = (
+				958419E62966FC9A00CF4682 /* MyBucket.swift */,
+				958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */,
+				958419E92966FC9D00CF4682 /* Assets.xcassets */,
+				958419EB2966FC9D00CF4682 /* Info.plist */,
+			);
+			path = MyBucket;
+			sourceTree = "<group>";
+		};
 		958FCFB42966A9CE0028B466 /* subViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				C45C0AFA296653A1007BFE58 /* starcket */,
+				958419E52966FC9A00CF4682 /* MyBucket */,
+				958419E02966FC9A00CF4682 /* Frameworks */,
 				C45C0AF9296653A1007BFE58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0AF8296653A1007BFE58 /* starcket.app */,
+				958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,6 +388,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		958419DE2966FC9A00CF4682 /* MyBucketExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958419F42966FC9D00CF4682 /* Build configuration list for PBXNativeTarget "MyBucketExtension" */;
+			buildPhases = (
+				958419DB2966FC9A00CF4682 /* Sources */,
+				958419DC2966FC9A00CF4682 /* Frameworks */,
+				958419DD2966FC9A00CF4682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBucketExtension;
+			productName = MyBucketExtension;
+			productReference = 958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C45C0AF7296653A1007BFE58 /* starcket */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C45C0B06296653A3007BFE58 /* Build configuration list for PBXNativeTarget "starcket" */;
@@ -322,10 +412,12 @@
 				C45C0AF4296653A1007BFE58 /* Sources */,
 				C45C0AF5296653A1007BFE58 /* Frameworks */,
 				C45C0AF6296653A1007BFE58 /* Resources */,
+				958419F12966FC9D00CF4682 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				958419EF2966FC9D00CF4682 /* PBXTargetDependency */,
 			);
 			name = starcket;
 			packageProductDependencies = (
@@ -345,9 +437,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					958419DE2966FC9A00CF4682 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					C45C0AF7296653A1007BFE58 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -370,11 +465,20 @@
 			projectRoot = "";
 			targets = (
 				C45C0AF7296653A1007BFE58 /* starcket */,
+				958419DE2966FC9A00CF4682 /* MyBucketExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		958419DD2966FC9A00CF4682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958419EA2966FC9D00CF4682 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C45C0AF6296653A1007BFE58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +492,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		958419DB2966FC9A00CF4682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958419F82966FE3200CF4682 /* WaterWave.swift in Sources */,
+				958419EC2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
+				958419F92966FE5100CF4682 /* Ex+Color.swift in Sources */,
+				958419F52966FD5F00CF4682 /* DeepWaterWave.swift in Sources */,
+				958419E72966FC9A00CF4682 /* MyBucket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C45C0AF4296653A1007BFE58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +520,7 @@
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
+				958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
 				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
 				958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */,
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
@@ -417,7 +534,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		958419EF2966FC9D00CF4682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 958419DE2966FC9A00CF4682 /* MyBucketExtension */;
+			targetProxy = 958419EE2966FC9D00CF4682 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		958419F22966FC9D00CF4682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6SBNPMLX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBucket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyBucket;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = likelion.hackathon.starcket.MyBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		958419F32966FC9D00CF4682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6SBNPMLX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBucket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyBucket;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = likelion.hackathon.starcket.MyBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C45C0B04296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -535,6 +716,7 @@
 		C45C0B07296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +748,7 @@
 		C45C0B08296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -597,6 +780,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		958419F42966FC9D00CF4682 /* Build configuration list for PBXNativeTarget "MyBucketExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958419F22966FC9D00CF4682 /* Debug */,
+				958419F32966FC9D00CF4682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C45C0AF3296653A1007BFE58 /* Build configuration list for PBXProject "starcket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
