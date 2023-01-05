@@ -65,10 +65,6 @@ struct BucketListView: View {
                                                 .padding(.trailing,Screen.maxWidth * 0.01)
                                             Text(bucket.title)
                                                 .font(.custom("Pretendard-Regular", size: 18))
-                                            Spacer()
-                                            Image(systemName: "ellipsis")
-                                                .foregroundColor(.gray)
-                                                .padding(.trailing, Screen.maxWidth * 0.05)
                                         }
                                         .padding(.leading, Screen.maxWidth * 0.06)
                                         .frame(width: Screen.maxWidth * 0.87, height: Screen.maxHeight * 0.09, alignment: .leading)
@@ -94,7 +90,7 @@ struct BucketListView: View {
                     isClickMarker.toggle()
                 }, label: {
                     Image(systemName: "plus.circle")
-                        .font(.system(size: 25, weight: .semibold))
+                        .font(.system(size: 22, weight: .semibold))
                 }))
                 .navigationBarTitle("나의 별킷리스트")
                 .sheet(isPresented: $isClickMarker) {
