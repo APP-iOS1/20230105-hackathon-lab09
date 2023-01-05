@@ -16,6 +16,15 @@
 		C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B2129665851007BFE58 /* BtnModifier.swift */; };
 		C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B23296659A1007BFE58 /* Bucket.swift */; };
 		C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B2729665ACC007BFE58 /* BucketDetail.swift */; };
+		C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3429665D0B007BFE58 /* SplashView.swift */; };
+		C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3629665D17007BFE58 /* SignInView.swift */; };
+		C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3829665D1D007BFE58 /* SignUpView.swift */; };
+		C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3A29665D24007BFE58 /* HomeView.swift */; };
+		C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3C29665D2B007BFE58 /* BucketListView.swift */; };
+		C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */; };
+		C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B4029665D40007BFE58 /* MyPageView.swift */; };
+		C45C0B4329665D48007BFE58 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B4229665D48007BFE58 /* NotificationView.swift */; };
+		C45C0B4529665D73007BFE58 /* ETC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B4429665D73007BFE58 /* ETC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +48,15 @@
 		C45C0B2129665851007BFE58 /* BtnModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnModifier.swift; sourceTree = "<group>"; };
 		C45C0B23296659A1007BFE58 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
 		C45C0B2729665ACC007BFE58 /* BucketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetail.swift; sourceTree = "<group>"; };
+		C45C0B3429665D0B007BFE58 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C45C0B3629665D17007BFE58 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		C45C0B3829665D1D007BFE58 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C45C0B3A29665D24007BFE58 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C45C0B3C29665D2B007BFE58 /* BucketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
+		C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
+		C45C0B4029665D40007BFE58 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		C45C0B4229665D48007BFE58 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C45C0B4429665D73007BFE58 /* ETC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +91,6 @@
 			children = (
 				C45C0B20296655BB007BFE58 /* Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
-				C45C0AFD296653A1007BFE58 /* ContentView.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
 				C45C0AFF296653A3007BFE58 /* Assets.xcassets */,
@@ -102,6 +119,15 @@
 		C45C0B0A2966541A007BFE58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C45C0AFD296653A1007BFE58 /* ContentView.swift */,
+				C45C0B2929665BAF007BFE58 /* Splash */,
+				C45C0B2B29665BD2007BFE58 /* Welcome */,
+				C45C0B2A29665BC2007BFE58 /* Home */,
+				C45C0B2E29665BFA007BFE58 /* BucketList */,
+				C45C0B2F29665C29007BFE58 /* Analyze */,
+				C45C0B3029665C48007BFE58 /* MyPage */,
+				C45C0B3229665C76007BFE58 /* Notification */,
+				C45C0B3129665C5C007BFE58 /* ETC. */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +200,87 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		C45C0B2929665BAF007BFE58 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B3429665D0B007BFE58 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C45C0B2A29665BC2007BFE58 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B3A29665D24007BFE58 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C45C0B2B29665BD2007BFE58 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B2C29665BDA007BFE58 /* SignIn */,
+				C45C0B2D29665BEA007BFE58 /* SignUp */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		C45C0B2C29665BDA007BFE58 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B3629665D17007BFE58 /* SignInView.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		C45C0B2D29665BEA007BFE58 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B3829665D1D007BFE58 /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C45C0B2E29665BFA007BFE58 /* BucketList */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B3C29665D2B007BFE58 /* BucketListView.swift */,
+			);
+			path = BucketList;
+			sourceTree = "<group>";
+		};
+		C45C0B2F29665C29007BFE58 /* Analyze */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */,
+			);
+			path = Analyze;
+			sourceTree = "<group>";
+		};
+		C45C0B3029665C48007BFE58 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B4029665D40007BFE58 /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		C45C0B3129665C5C007BFE58 /* ETC. */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B4429665D73007BFE58 /* ETC.swift */,
+			);
+			path = ETC.;
+			sourceTree = "<group>";
+		};
+		C45C0B3229665C76007BFE58 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				C45C0B4229665D48007BFE58 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,13 +351,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45C0B4529665D73007BFE58 /* ETC.swift in Sources */,
+				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
+				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
+				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
 				C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */,
+				C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */,
 				C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
+				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
+				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
+				C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
 				C45C0B1429665512007BFE58 /* Constants.swift in Sources */,
+				C45C0B4329665D48007BFE58 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
