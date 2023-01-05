@@ -10,6 +10,12 @@ import SwiftUI
 struct EditProfileView: View {
     
     @EnvironmentObject var signUpAuthStore: SignUpAuthStore
+    // 닉네임 수정
+    @State private var isShowSucceedToast = false
+    @State private var isDuplicated = false
+    @State private var isNotDuplicated = false
+    @FocusState var isInFocusNickName: Bool
+    
     @State var newPassword = ""
     @State var checkPassword = ""
     @State private var isSecuredPassword = true
@@ -18,7 +24,7 @@ struct EditProfileView: View {
     @FocusState var isInFocusPasswordCheck: Bool
     @State var newAddress = ""
     @State var newPhoneNumber = ""
-    
+    @State var nickName: String = ""
 
     @State var showingAlert = false
     @State var showingLogoutAlert = false
@@ -29,11 +35,80 @@ struct EditProfileView: View {
         return password.range(of: regExp, options: .regularExpression) != nil
     }
     
+    
+    // 닉네임 중복을 검사하는 함수입니다.
+    func checkNicknameDuplicated() {
+        Task {
+            if await signUpAuthStore.isNicknameDuplicated(currentUserNickname: nickName) {
+                // 이메일이 중복될 경우
+                isDuplicated = true
+                isNotDuplicated = false
+            } else {
+                isDuplicated = false
+                isNotDuplicated = true
+            }
+        }
+    }
+
+    
     var body: some View{
         VStack{
+            Text("닉네임 수정")
+                .font(.title3)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 15)
+                .padding(.bottom, 30)
+                .padding(.top, 30)
+            
+            VStack(spacing: 5) {
+                HStack {
+                    TextField("닉네임 (20자리 이내)", text: $nickName)
+                        .focused($isInFocusNickName)
+                        .modifier(ClearTextFieldModifier())
+                        .onChange(of: nickName) { newValue in
+                            signUpAuthStore.nickNameDuplicationState = .duplicated
+                        }
+                    
+                    // email 필드가 비어있지 않으면서 정규식에 적합한다면
+                    if !nickName.isEmpty {
+                        // 이메일 중복검사
+                        // 중복확인 버튼을 띄우고 사용 가능하다면 체크 아이콘 띄우고, 아니면 버튼 유지
+                        if signUpAuthStore.nickNameDuplicationState == .duplicated {
+                            Button {
+                                checkNicknameDuplicated()
+                            } label: {
+                                Text("중복 확인") // MARK: 수정자 분리 필요함.
+                                    .font(.footnote)
+                                    .foregroundColor(.accentColor)
+                                    .padding(5)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 5)
+                                            .stroke(Color.accentColor, lineWidth: 1)
+                                    )
+                                    .background(Color.white)
+                            } // Button
+                        } else if signUpAuthStore.nickNameDuplicationState == .checking{
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle(tint: .black))
+                                .frame(height: 40)
+                        } else {
+                            Image(systemName: "checkmark.circle")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20.5)
+                                .foregroundColor(.green)
+                        } // else
+                    } // if
+                } // HStack
+                .frame(height: 30) // TextField가 있는 HStack의 height 고정 <- 아이콘 크기 변경 방지
+                .padding(.trailing, 20)
+                
+                Rectangle()
+                    .modifier(TextFieldUnderLineRectangleModifier(stateTyping: isInFocusNickName))
+            }
             
             //MARK: - 비밀번호를 변경하는 부분
-            
             Text("비밀번호 수정")
                 .font(.title3)
                 .bold()

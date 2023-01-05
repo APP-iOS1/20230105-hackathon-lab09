@@ -14,24 +14,20 @@ struct PurchasePremiumView: View {
             Text("별킷리스트 Premium을 경험해보세요")
                 .font(.custom("Pretendard-ExtraBold", size: 22))
                 .bold()
-                .padding(.bottom, 50)
                 .padding(.top, 20)
-
-            
-            Image(systemName: "star.fill")
-                .resizable()
-                .foregroundColor(.yellow)
-                .frame(width: 180, height: 180)
-                .padding(.bottom, 30)
-            Text("프리밈엄 혜택")
-                .font(.custom("Pretendard-Light", size: 17))
-                .bold()
+            Text("2900원으로 아래 서비스들을 이용하실 수 있습니다.")
+                .font(.custom("Pretendard-ExtraBold", size: 15))
                 .padding(.bottom, 40)
+            
+            Image("preminumStar")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+
             VStack(alignment: .leading) {
                 HStack {
                     Image("checkmark")
                         .resizable()
-                        .frame(width: 43, height: 43)
+                        .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("다양한 별 모양 이미지")
                         .font(.custom("Pretendard-ExtraBold", size: 20))
@@ -42,7 +38,7 @@ struct PurchasePremiumView: View {
                 HStack {
                     Image("checkmark")
                         .resizable()
-                        .frame(width: 43, height: 43)
+                        .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("다양한 테마와 시즌 한정 테마")
                         .font(.custom("Pretendard-ExtraBold", size: 20))
@@ -53,7 +49,7 @@ struct PurchasePremiumView: View {
                 HStack {
                     Image("checkmark")
                         .resizable()
-                        .frame(width: 43, height: 43)
+                        .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("사진 첨부")
                         .font(.custom("Pretendard-ExtraBold", size: 20))
@@ -63,7 +59,7 @@ struct PurchasePremiumView: View {
                 HStack {
                     Image("checkmark")
                         .resizable()
-                        .frame(width: 43, height: 43)
+                        .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("앱 잠금 기능")
                         .font(.custom("Pretendard-ExtraBold", size: 20))
@@ -79,9 +75,19 @@ struct PurchasePremiumView: View {
             Button {
                 
             } label: {
-                Text("₩ 2,900")
-                    //.modifier(MaxWidthColoredButtonModifier(cornerRadius: 15))
+                Text("이용 중")
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .bold()
+                    .background(Color.secondary)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                    .padding(EdgeInsets(top: 5, leading: 20, bottom: 0, trailing: 20))
+                    .padding(.bottom, 30)
             }
+            .disabled(true)
+            
             
             Spacer()
                 
