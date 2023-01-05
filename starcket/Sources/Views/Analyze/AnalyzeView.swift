@@ -61,26 +61,19 @@ struct AnalyzeView: View {
                                 .fill(Color(hex:"#9bc5ed"))
                             //4.
                             // Water Drop
-                                .overlay(content:{
-                                    
-                                    ZStack{
-                                        
-                                        
-                                        
-                                        
-                                        Image("star")
-                                            .resizable()
-                                            .frame(width: size.width / 2, height:size.width / 2)
-                                            .offset(x: 0, y: 0)
-                                            .rotationEffect(.degrees(rotation))
-                                        
-                         
-                                        
-                                        
-                                        
-                                    }
-                                    
-                                })
+                            //                                .overlay(content:{
+                            //
+                            //                                    ZStack{
+                            //
+                            //                                        Image("star")
+                            //                                            .resizable()
+                            //                                            .frame(width: size.width / 2, height:size.width / 2)
+                            //                                            .offset(x: 0, y: 60)
+                            //                                            .rotationEffect(.degrees(rotation))
+                            //
+                            //                                    }
+                            //
+                            //                                })
                             //3.
                             //Masking into Drop Shape
                                 .mask {
@@ -104,30 +97,30 @@ struct AnalyzeView: View {
                                         
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.3))
+                                            .fill(.white.opacity(0.4))
                                             .frame(width: 15, height: 15)
-                                            .offset(x: -20)
+                                            .offset(x: -40)
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.3))
+                                            .fill(.white.opacity(0.4))
                                             .frame(width: 15, height: 15)
-                                            .offset(x: 40, y: 30)
+                                            .offset(x: 50, y: 40)
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.3))
+                                            .fill(.white.opacity(0.4))
                                             .frame(width: 25, height: 25)
-                                            .offset(x: -30, y: 80)
+                                            .offset(x: -40, y: 90)
                                         
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.3))
+                                            .fill(.white.opacity(0.4))
                                             .frame(width: 10, height: 10)
-                                            .offset(x: 40, y: 100)
+                                            .offset(x: 50, y: 120)
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.3))
+                                            .fill(.white.opacity(0.4))
                                             .frame(width: 10, height: 10)
-                                            .offset(x: -40, y: 50)
+                                            .offset(x: -50, y: 60)
                                         
                                         
                                         
@@ -150,6 +143,17 @@ struct AnalyzeView: View {
                                         .padding(0)
                                 }
                         }
+                        
+                        
+                        Image("star")
+                            .resizable()
+                            .frame(width: size.width / 2, height:size.width / 2)
+                            .offset(x: 0, y: 60)
+                            .rotationEffect(.degrees(rotation))
+                        
+                        
+                        
+                        
                         
                         // 5.
                         // Add Buttton
@@ -190,7 +194,7 @@ struct AnalyzeView: View {
                 
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
-
+            
             
             VStack{
                 // let percentage = Int((showingProgress / Int(total)) * 100)
@@ -208,7 +212,7 @@ struct AnalyzeView: View {
             }
             .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
             .background(.gray.opacity(0.1))
-         
+            
             
         }
         .onAppear {
