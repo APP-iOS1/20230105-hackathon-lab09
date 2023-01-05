@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0CD92EFC2966A3D70058F4B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */; };
-		0CD92F002966CA410058F4B6 /* AddStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92EFF2966CA410058F4B6 /* AddStarView.swift */; };
+		0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92EFF2966CA410058F4B6 /* AddStarView.swift */; };
+		0CD92F032966EDC20058F4B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92F022966EDC20058F4B6 /* HomeView.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -21,7 +22,6 @@
 		C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3429665D0B007BFE58 /* SplashView.swift */; };
 		C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3629665D17007BFE58 /* SignInView.swift */; };
 		C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3829665D1D007BFE58 /* SignUpView.swift */; };
-		C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3A29665D24007BFE58 /* HomeView.swift */; };
 		C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3C29665D2B007BFE58 /* BucketListView.swift */; };
 		C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */; };
 		C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B4029665D40007BFE58 /* MyPageView.swift */; };
@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CD92EFF2966CA410058F4B6 /* AddStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStarView.swift; sourceTree = "<group>"; };
+		0CD92F022966EDC20058F4B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		C45C0B3429665D0B007BFE58 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		C45C0B3629665D17007BFE58 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		C45C0B3829665D1D007BFE58 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		C45C0B3A29665D24007BFE58 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C45C0B3C29665D2B007BFE58 /* BucketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
 		C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
 		C45C0B4029665D40007BFE58 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
@@ -230,8 +230,8 @@
 		C45C0B2A29665BC2007BFE58 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C45C0B3A29665D24007BFE58 /* HomeView.swift */,
 				0CD92EFF2966CA410058F4B6 /* AddStarView.swift */,
+				0CD92F022966EDC20058F4B6 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -392,14 +392,14 @@
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
-				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
 				C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
-				0CD92F002966CA410058F4B6 /* AddStarView.swift in Sources */,
+				0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */,
 				C45C0B1429665512007BFE58 /* Constants.swift in Sources */,
 				C45C0B4329665D48007BFE58 /* NotificationView.swift in Sources */,
+				0CD92F032966EDC20058F4B6 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
