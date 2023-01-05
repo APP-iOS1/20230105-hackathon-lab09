@@ -97,8 +97,6 @@ struct BucketListView: View {
                     BucketListAddView(isClickMarker: $isClickMarker)
                         .presentationDetents([.fraction(0.8)])
                 }
-                
-
             }
             .onAppear {
                 bucketStore.isLoading = true
