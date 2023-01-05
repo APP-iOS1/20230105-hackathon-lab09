@@ -43,7 +43,7 @@ struct DeepWaterWave: Shape{
                 let x: CGFloat = value
                 //Cannot convert value of type 'Angle' to expected argument type 'CGFloat'
                 // But using radins, we can make CGFloat
-                let sine: CGFloat = sin(Angle(degrees: value + offset).radians)
+                let sine: CGFloat = cos(Angle(degrees: value + offset).radians)
                 let y: CGFloat = progressHeight + (height * sine / 1.9)
                 
                 path.addLine(to: CGPoint(x: x, y: y))

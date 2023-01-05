@@ -19,6 +19,10 @@ struct AnalyzeView: View {
     // Showing
     @State var showingProgress: Int = 0
     
+    
+    // Rotation
+    @State var rotation: Double = 0
+    
     var body: some View {
         VStack{
             
@@ -33,21 +37,16 @@ struct AnalyzeView: View {
                     .font(.title)
                 
             }
-
-            Section{
-                // let percentage = Int((showingProgress / Int(total)) * 100)
-                // 예시로 progress = 0.5
-                let percentage = Int(progress * 100)
-                Text("\(percentage) % 달성")
-                    .bold()
-                    .foregroundColor(.yellow)
-                    .font(.title)
-                
+            .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
+            .background(.gray.opacity(0.1))
+            
+            VStack(spacing:0){
                 GeometryReader { proxy in
                     let size = proxy.size
                     
                     ZStack{
-                        Image(systemName: "bag.fill")
+                        Image("bucket")
+                        //Image(systaemName: "bag.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                         //foreground cant be white
@@ -59,7 +58,7 @@ struct AnalyzeView: View {
                         
                         Group {
                             WaterWave(progress: progress, waveHeight: 0.05, offset:  startAnimation)
-                                .fill(.yellow)
+                                .fill(Color(hex:"#9bc5ed"))
                             //4.
                             // Water Drop
                                 .overlay(content:{
@@ -67,31 +66,17 @@ struct AnalyzeView: View {
                                     ZStack{
                                         
                                         
-                                        Circle()
-                                            .fill(.white.opacity(0.1))
-                                            .frame(width: 15, height: 15)
-                                            .offset(x: -20)
-                                        
-                                        Circle()
-                                            .fill(.white.opacity(0.1))
-                                            .frame(width: 15, height: 15)
-                                            .offset(x: 40, y: 30)
-                                        
-                                        Circle()
-                                            .fill(.white.opacity(0.1))
-                                            .frame(width: 25, height: 25)
-                                            .offset(x: -30, y: 80)
                                         
                                         
-                                        Circle()
-                                            .fill(.white.opacity(0.1))
-                                            .frame(width: 10, height: 10)
-                                            .offset(x: 40, y: 100)
+                                        Image("star")
+                                            .resizable()
+                                            .frame(width: size.width / 2, height:size.width / 2)
+                                            .offset(x: 0, y: 0)
+                                            .rotationEffect(.degrees(rotation))
                                         
-                                        Circle()
-                                            .fill(.white.opacity(0.1))
-                                            .frame(width: 10, height: 10)
-                                            .offset(x: -40, y: 50)
+                         
+                                        
+                                        
                                         
                                     }
                                     
@@ -99,17 +84,17 @@ struct AnalyzeView: View {
                             //3.
                             //Masking into Drop Shape
                                 .mask {
-                                    
-                                    Image(systemName: "bag.fill")
+                                    Image("bucket")
+                                    //Image(systemName: "bag.fill")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .padding(0)
-                            }
+                                }
                         }
                         
                         Group {
                             DeepWaterWave(progress: progress, waveHeight: 0.05, offset:  startAnimation)
-                                .fill(.orange)
+                                .fill(Color(hex:"#c8e3fd"))
                             //4.
                             // Water Drop
                                 .overlay(content:{
@@ -117,31 +102,40 @@ struct AnalyzeView: View {
                                     ZStack{
                                         
                                         
+                                        
                                         Circle()
-                                            .fill(.white.opacity(0.1))
+                                            .fill(.white.opacity(0.3))
                                             .frame(width: 15, height: 15)
                                             .offset(x: -20)
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.1))
+                                            .fill(.white.opacity(0.3))
                                             .frame(width: 15, height: 15)
                                             .offset(x: 40, y: 30)
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.1))
+                                            .fill(.white.opacity(0.3))
                                             .frame(width: 25, height: 25)
                                             .offset(x: -30, y: 80)
                                         
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.1))
+                                            .fill(.white.opacity(0.3))
                                             .frame(width: 10, height: 10)
                                             .offset(x: 40, y: 100)
                                         
                                         Circle()
-                                            .fill(.white.opacity(0.1))
+                                            .fill(.white.opacity(0.3))
                                             .frame(width: 10, height: 10)
                                             .offset(x: -40, y: 50)
+                                        
+                                        
+                                        
+                                        
+                                        Image("bucketO")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                        
                                         
                                     }
                                     
@@ -149,17 +143,13 @@ struct AnalyzeView: View {
                             //3.
                             //Masking into Drop Shape
                                 .mask {
-                                    
-                                    Image(systemName: "bag.fill")
+                                    Image("bucket")
+                                    //Image(systemName: "bag.fill")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .padding(0)
-                            }
+                                }
                         }
-                        
-                
-                     
-                        
                         
                         // 5.
                         // Add Buttton
@@ -184,30 +174,49 @@ struct AnalyzeView: View {
                         //                            }
                         
                     }
-                        .frame(width: size.width, height: size.height, alignment: .center)
-                        .onAppear{
-                            // Looping Animation
-                            withAnimation(.linear(duration: 2).repeatForever(autoreverses: true)){
-                                // If you set value less than the rect width it will not finish completely
-                                // startAnimbation = size.width - 100
-                                startAnimation = size.width / 2
+                    .frame(width: size.width, height: size.height, alignment: .center)
+                    .onAppear{
+                        // Looping Animation
+                        withAnimation(.linear(duration: 2).repeatForever(autoreverses: true)){
+                            // If you set value less than the rect width it will not finish completely
+                            // startAnimbation = size.width - 100
+                            startAnimation = size.width / 2
+                            
+                            
+                            
                         }
                     }
                 }
-                .padding()
+                
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             }
+
             
             VStack{
+                // let percentage = Int((showingProgress / Int(total)) * 100)
+                // 예시로 progress = 0.5
+                let percentage = Int(progress * 100)
+                Text("\(percentage) % 달성")
+                    .bold()
+                //.foregroundColor(.yellow)
+                    .font(.title)
+                
                 Text(" \(Int(total))개 중에 \(Int(showingProgress))개를 달성하셨어요!!")
                     .bold()
-                    .foregroundColor(.yellow)
+                //.foregroundColor(.yellow)
                     .font(.title)
             }
-            Spacer()
+            .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
+            .background(.gray.opacity(0.1))
+         
+            
         }
-        .padding()
         .onAppear {
+            withAnimation(.linear(duration:2).repeatForever(autoreverses: true)) {
+                self.rotation = (self.rotation < 360 ? self.rotation - 30 : 0)
+            }
+            
+            
             Task {
                 UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
                 (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucket()
@@ -229,6 +238,7 @@ struct AnalyzeView: View {
             total = 0.0
             progress = 0.0
             showingProgress = 0
+            rotation = 0.0
             
         }
     }
