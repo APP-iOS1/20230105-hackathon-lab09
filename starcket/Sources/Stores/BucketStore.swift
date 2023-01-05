@@ -17,7 +17,11 @@ class BucketStore: ObservableObject {
 	
 	// Bucket Data 가져오기
 	func fetchBucket() async throws -> (data: [Bucket], bucketIdList: [String]) {
+        
+        self.bucket.removeAll()
+        
 		guard let userId = UserDefaults.standard.string(forKey: "userIdToken") else { return (data: [], bucketIdList: []) }
+        
 		
 		let docRef = try await database.collection("User").document(userId).getDocument()
 		
