@@ -20,7 +20,7 @@ class BucketDetailStore: ObservableObject {
 		var data = [BucketDetail]()
 		
 		for detailId in detailIdList {
-			let docRef = try await database.collection("Bucket").document(detailId).getDocument()
+			let docRef = try await database.collection("BucketDetail").document(detailId).getDocument()
 			
 			let docData = docRef.data()!
 			
@@ -104,6 +104,8 @@ class BucketDetailStore: ObservableObject {
 			}
 		})
 	}
+    
+
 	
 	// Bucket Detail 삭제
 	func removeBucketDetail(_ bucketDetatil: BucketDetail) {
