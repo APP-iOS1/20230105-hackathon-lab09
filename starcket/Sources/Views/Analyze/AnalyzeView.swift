@@ -23,20 +23,74 @@ struct AnalyzeView: View {
     // Rotation
     @State var rotation: Double = 0
     
+    
+    // This Year
+    @State var year: Int = 2023
+    
     var body: some View {
         VStack{
-            
-            HStack{
-                Image(systemName: "arrow.left")
-                    .font(.title)
-                
-                Text("2023년")
-                    .font(.title)
-                
-                Image(systemName: "arrow.right")
-                    .font(.title)
+            HStack {
+                Button {
+                    year -= 1
+                    bucketStore.isLoading = true
+                    
+                    total = 0.0
+                    progress = 0.0
+                    showingProgress = 0
+                    rotation = 0.0
+                    
+                    Task {
+                        (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+                        
+                        total = CGFloat(bucketStore.bucket.count)
+           
+                        
+                        for bucket in bucketStore.bucket{
+                            if bucket.isCheck {
+                                //print(bucket.isCheck)
+                                showingProgress += 1
+                                progress += 1 / CGFloat(bucketStore.bucket.count)
+                            }
+                        }
+                        bucketStore.isLoading = false
+                    }
+                } label: {
+                    Image(systemName:"arrowtriangle.left.fill")
+                }
+                Text(String(year))
+                    .padding(.horizontal, Screen.maxWidth * 0.2)
+                Button {
+                    if year < 2023 {
+                        year += 1
+                    }
+                    bucketStore.isLoading = true
+                    
+                    total = 0.0
+                    progress = 0.0
+                    showingProgress = 0
+                    rotation = 0.0
+                    
+                    Task {
+                        (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+                        
+                        total = CGFloat(bucketStore.bucket.count)
+           
+                        
+                        for bucket in bucketStore.bucket{
+                            if bucket.isCheck {
+                                //print(bucket.isCheck)
+                                showingProgress += 1
+                                progress += 1 / CGFloat(bucketStore.bucket.count)
+                            }
+                        }
+                        bucketStore.isLoading = false
+                    }
+                } label: {
+                    Image(systemName:"arrowtriangle.right.fill")
+                }
                 
             }
+            .font(.custom("Pretendard-Regular", size: 25))
             .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
             .background(.gray.opacity(0.1))
             
@@ -223,11 +277,14 @@ struct AnalyzeView: View {
             
             Task {
                 UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
-                (bucketStore.bucket, bucketStore.bucketIdList, bucketStore.starPosArr) = try await bucketStore.fetchBucket()
+//                (bucketStore.bucket, bucketStore.bucketIdList, bucketStore.starPosArr) = try await bucketStore.fetchBucket()
+                (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+//
+//                print(total)
+//                print(bucketStore.bucket.count)
                 
                 total = CGFloat(bucketStore.bucket.count)
-                print(total)
-                print(bucketStore.bucket.count)
+   
                 
                 for bucket in bucketStore.bucket{
                     if bucket.isCheck {
@@ -252,4 +309,18 @@ struct AnalyzeView: View {
 //    static var previews: some View {
 //        AnalyzeView()
 //    }
+//}
+
+
+//
+//HStack{
+//    Image(systemName: "arrow.left")
+//        .font(.title)
+//
+//    Text("2023년")
+//        .font(.title)
+//
+//    Image(systemName: "arrow.right")
+//        .font(.title)
+//
 //}
