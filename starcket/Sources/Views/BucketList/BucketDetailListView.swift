@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BucketDetailListView: View {
+    @Environment(\.dismiss) private var dismiss
     @StateObject var bucketDetailStore = BucketDetailStore()
     @StateObject var bucketStore: BucketStore
     var detailIdList: [String]
@@ -51,10 +52,11 @@ struct BucketDetailListView: View {
                     (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
                     bucketStore.isLoading = false
                 }
+                dismiss
                 
 
             } label: {
-                Text("추가")
+                Text("별킷 달성 완료")
                     .padding(.horizontal, Screen.maxHeight*0.09)
                     .font(.custom("Pretendard-Regular", size: 18))
                     .padding(.vertical, Screen.maxWidth*0.05)
@@ -62,6 +64,18 @@ struct BucketDetailListView: View {
             .background(Color("mainColor"))
             .cornerRadius(40)
             .padding()
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing){
+                    
+                    NavigationLink {
+                        BucketListDetailAddView()
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 25, weight: .semibold))
+                    }
+
+                }
+            }
         }
         .onAppear {
             Task {

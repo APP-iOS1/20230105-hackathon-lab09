@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BucketListDetailView: View {
+struct BucketDetailView: View {
     var body: some View {
         VStack{
             Text("DetailViewTitle")
@@ -18,8 +18,8 @@ struct BucketListDetailView: View {
     }
 }
 
-struct BucketListDetailView_Previews: PreviewProvider {
+struct BucketDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BucketListDetailView()
+        BucketDetailView()
     }
 }

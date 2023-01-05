@@ -93,8 +93,8 @@ struct BucketListView: View {
                 .navigationBarItems(trailing:Button(action: {
                     isClickMarker.toggle()
                 }, label: {
-                    Image(systemName: "plus")
-                        .bold()
+                    Image(systemName: "plus.circle")
+                        .font(.system(size: 25, weight: .semibold))
                 }))
                 .navigationBarTitle("나의 별킷리스트")
                 .sheet(isPresented: $isClickMarker) {
