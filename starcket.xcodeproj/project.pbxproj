@@ -6,8 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		80826E382966A3A600737B64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80826E372966A3A600737B64 /* GoogleService-Info.plist */; };
+
+		1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */; };
+		1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */; };
+		1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E3296711900024DBB1 /* Ex+Date.swift */; };
+		1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E5296711990024DBB1 /* Ex+String.swift */; };
+		1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */; };
+		8B4377172966F109002D4AAB /* BucketListDetailAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */; };
+		8B4377192966F5F4002D4AAB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4377182966F5F4002D4AAB /* ImagePicker.swift */; };
+		8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43771A29671C52002D4AAB /* BucketDetailView.swift */; };
 		80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3A2966A45F00737B64 /* GoogleSignIn */; };
 		80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3C2966A45F00737B64 /* GoogleSignInSwift */; };
 		80826E3F2966A55000737B64 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E3E2966A55000737B64 /* AuthStore.swift */; };
@@ -50,7 +57,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		80826E372966A3A600737B64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+
+		1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListAddView.swift; sourceTree = "<group>"; };
+		1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketDetailStore.swift; sourceTree = "<group>"; };
+		1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailListView.swift; sourceTree = "<group>"; };
+		1A3AE9E3296711900024DBB1 /* Ex+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
+		1A3AE9E5296711990024DBB1 /* Ex+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
+		8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailAddView.swift; sourceTree = "<group>"; };
+		8B4377182966F5F4002D4AAB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8B43771A29671C52002D4AAB /* BucketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailView.swift; sourceTree = "<group>"; };
 		80826E3E2966A55000737B64 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		80826E402966AE2900737B64 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		80826E442966B85900737B64 /* TxtfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtfieldModifier.swift; sourceTree = "<group>"; };
@@ -135,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B20296655BB007BFE58 /* Info.plist */,
-				80826E372966A3A600737B64 /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
@@ -184,8 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B48296686EB007BFE58 /* BucketStore.swift */,
+				1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */,
 				80826E3E2966A55000737B64 /* AuthStore.swift */,
 				80826E4F2966C5DA00737B64 /* SignUpAuthStore.swift */,
+
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -223,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B1529665555007BFE58 /* Ex+Color.swift */,
+				1A3AE9E3296711900024DBB1 /* Ex+Date.swift */,
+				1A3AE9E5296711990024DBB1 /* Ex+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +319,11 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3C29665D2B007BFE58 /* BucketListView.swift */,
+				1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */,
+				1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */,
+				8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */,
+				8B43771A29671C52002D4AAB /* BucketDetailView.swift */,
+				8B4377182966F5F4002D4AAB /* ImagePicker.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -415,7 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80826E382966A3A600737B64 /* GoogleService-Info.plist in Resources */,
+
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
 			);
@@ -428,25 +451,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */,
 				C45C0B4529665D73007BFE58 /* ETC.swift in Sources */,
+				1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
+				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
 				80826E642966E04E00737B64 /* MoreView.swift in Sources */,
 				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
 				80826E612966D8CF00737B64 /* SignUpView.swift in Sources */,
 				80826E682966E42F00737B64 /* PurchasePremiumView.swift in Sources */,
 				C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */,
+				8B4377192966F5F4002D4AAB /* ImagePicker.swift in Sources */,
 				C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */,
+				8B4377172966F109002D4AAB /* BucketListDetailAddView.swift in Sources */,
 				80826E5E2966D8CF00737B64 /* SignUpStep2View.swift in Sources */,
 				C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */,
 				C45C0B49296686EB007BFE58 /* BucketStore.swift in Sources */,
 				80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
+				1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */,
 				80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */,
 				80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
 				80826E5F2966D8CF00737B64 /* SafariView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
+				8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */,
 				80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */,
 				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
 				80826E452966B85900737B64 /* TxtfieldModifier.swift in Sources */,
@@ -457,6 +487,7 @@
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
 				C45C0B1429665512007BFE58 /* Constants.swift in Sources */,
 				C45C0B4329665D48007BFE58 /* NotificationView.swift in Sources */,
+				1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
