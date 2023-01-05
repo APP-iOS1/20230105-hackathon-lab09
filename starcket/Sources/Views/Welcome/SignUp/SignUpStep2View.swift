@@ -203,5 +203,6 @@ struct SignUpStep2View: View {
 struct SignUpStep2View_Previews: PreviewProvider {
     static var previews: some View {
         SignUpStep2View(email: .constant(""), password: .constant(""), navStack: .constant(NavigationPath()))
+            .environmentObject(SignUpAuthStore())
     }
 }

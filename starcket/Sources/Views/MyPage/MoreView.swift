@@ -50,6 +50,7 @@ struct MoreView: View {
 
             //WebSheetView(url: place.siteUrl)
         }
+        .navigationTitle("기타")
     }
 }
 

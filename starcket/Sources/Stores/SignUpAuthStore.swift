@@ -43,6 +43,8 @@ class SignUpAuthStore: ObservableObject {
 
     let database = Firestore.firestore()
     let authentification = Auth.auth()
+    var authStore = AuthStore.shared
+    
     
     
     // MARK: - Create New Customer(user)
@@ -83,7 +85,7 @@ class SignUpAuthStore: ObservableObject {
                 "id" : uid,
                 "bucketId": [],
                 "detailId": [],
-                "userNickname" : nickname,
+                "name" : nickname,
                 "email" : email,
                 "isPremium": true
             ])
@@ -140,6 +142,8 @@ class SignUpAuthStore: ObservableObject {
             // 변경이 필요함!
             let userNickname = await requestUserNickname(uid: authentification.currentUser?.uid ?? "")
             self.currentUser = User(id: self.authentification.currentUser?.uid ?? "", bucketId: [], detailId: [], name: userNickname, email: email, isPremium: true)
+            UserDefaults.standard.set(self.authentification.currentUser?.uid, forKey: "userIdToken")
+            //print("userIdToken \(self.authentification.currentUser?.uid)")
             print("userNickname: \(userNickname)")
         } catch {
             loginRequestState = .notLoggedIn
@@ -154,7 +158,7 @@ class SignUpAuthStore: ObservableObject {
         do {
             try authentification.signOut()
             loginRequestState = .notLoggedIn
-            
+            authStore.state = .signOut
             // 로컬에 있는 CustomerInfo 구조체의 객체를 날림
             self.currentUser = nil
         } catch {

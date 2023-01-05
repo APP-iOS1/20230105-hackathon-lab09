@@ -10,6 +10,7 @@ import PopupView
 
 struct SignInView: View {
     @EnvironmentObject var authStore: AuthStore
+    @EnvironmentObject var signUpAuthStore: SignUpAuthStore
     // MARK: - Property Wrappers
     
     @Environment(\.dismiss) private var dismiss
@@ -22,7 +23,6 @@ struct SignInView: View {
     
     @State var navStack = NavigationPath()
     
-    @EnvironmentObject var signUpAuthStore: SignUpAuthStore
 
 //    @Binding var totalPriceForBinding: Int
     
@@ -51,14 +51,27 @@ struct SignInView: View {
     var body: some View {
         NavigationStack(path: $navStack) {
             VStack {
-                HStack {
-                    Text("로그인")
-                        .bold()
-                        .font(.title)
-                    Spacer()
-                } // HStack - 로그인 text
-                .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 0))
-                
+                Group {
+                    Button {
+                        authStore.handleKaKaoLogin()
+                    } label: {
+                        Text("카카오톡 로그인")
+                    }
+                    
+                    Button {
+                        authStore.kakaoLogout()
+                    } label: {
+                        Text("카카오톡 로그아웃")
+                    }
+                    
+                    HStack {
+                        Text("로그인")
+                            .bold()
+                            .font(.title)
+                        Spacer()
+                    } // HStack - 로그인 text
+                    .padding(EdgeInsets(top: 10, leading: 20, bottom: 0, trailing: 0))
+                }
                 Spacer()
                 
                 HStack {
@@ -143,21 +156,6 @@ struct SignInView: View {
             .onTapGesture() { // 키보드 밖 화면 터치 시 키보드 사라짐
                 endEditing()
             } // onTapGesture
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        // 닫기 버튼 클릭 시 로그인 뷰(시트) 사라짐.
-                        dismiss()
-                    } label: {
-                        Image(systemName: "multiply")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 17)
-                            .foregroundColor(.gray)
-                            .fontWeight(.light)
-                    } // label
-                } // toolbarItem
-            } // toolbar
             .popup(isPresented: $isLoggedInFailed, type: .floater(useSafeAreaInset: true), position: .top, animation: .default, autohideIn: 2, dragToDismiss: true, closeOnTap: true, closeOnTapOutside: true, view: {
                 HStack {
                     Image(systemName: "exclamationmark.circle")

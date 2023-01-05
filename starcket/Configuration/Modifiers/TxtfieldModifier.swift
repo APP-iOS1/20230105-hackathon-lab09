@@ -52,3 +52,19 @@ struct TextFieldClearButton: ViewModifier {
         }
     }
 }
+
+
+struct PasswordAlertModifier: ViewModifier {
+    @Binding var showingAlert: Bool
+    @Binding var password: String
+    @Binding var password_2: String
+    func body(content: Content) -> some View {
+        content
+            .alert("비밀번호를 다시 입력해주세요", isPresented: $showingAlert) {
+                Button("Ok") {
+                    password = ""
+                    password_2 = ""
+                }
+            }
+    }
+}

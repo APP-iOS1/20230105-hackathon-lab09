@@ -52,6 +52,8 @@ class AuthStore: ObservableObject {
     
     //let userVM: UserViewModel = UserViewModel()
     
+    @Published var currentUser: User?
+    let database = Firestore.firestore()
     //MARK: - 이메일 로그인
     //이메일 계정 생성 (회원가입)
     func emailCreateUser(email: String, password: String, phoneNumber: String, nickName: String) {
@@ -166,7 +168,10 @@ class AuthStore: ObservableObject {
             if let error = error {
                 print(error.localizedDescription)
             } else {
+                let id = result?.user.uid
                 UserDefaults.standard.set(result?.user.uid, forKey: "userIdToken")
+//                self.currentUser = User(id: id, bucketId: [], detailId: [], name: id. ?? "구글 사용자", email: user?.userID ?? "구글 사용자", isPremium: true)
+                
                 // 이메일 로그인 성공 시
                 self.loginState = .success //로그인 성공 여부
                 self.state = .signIn // 로그인 상태
@@ -235,6 +240,8 @@ class AuthStore: ObservableObject {
                 if await handleLoginWithKakaoTalkApp() {
                     self.loginState = .success //로그인 성공 여부
                     self.state = .signIn
+ 
+//                    self.currentUser = User(id: UUID().uuidString, bucketId: [], detailId: [], name: user?.userID ?? "구글 사용자", email: user?.userID ?? "구글 사용자", isPremium: true)
                 }
 
             } else { // 설치 안되어 있을 때
@@ -246,6 +253,26 @@ class AuthStore: ObservableObject {
                 }
                 
             }
+        
+            UserApi.shared.me {(user, error) in
+                        if let error = error {
+                            print(error)
+                        } else {
+                            print("nickname: \(user?.kakaoAccount?.profile?.nickname ?? "no nickname")")
+                            print("email: \(user?.kakaoAccount?.email ?? "no email")")
+                            let id = UUID().uuidString
+                            let name = user?.kakaoAccount?.profile?.nickname ?? "no nickname"
+                            let email = user?.kakaoAccount?.email ?? "no email"
+                            self.currentUser = User(id: UUID().uuidString , bucketId: [], detailId: [], name: name, email: email, isPremium: true)
+                            UserDefaults.standard.set(id, forKey: "userIdToken")
+                            self.registerUser(uid: id, email: email, nickname: name)
+                            //print("user?.id : \(user?.)")
+                            //guard let userId = user?.id else {return}
+//                            UserDefaults.standard.set(self.authentification.currentUser?.uid, forKey: "userIdToken")
+                }
+            }
+            
+            
         }
     }
     
@@ -295,5 +322,18 @@ class AuthStore: ObservableObject {
                     }
                 }
         })
+    }
+    
+    func registerUser(uid: String, email: String, nickname: String) {
+        database.collection("User")
+            .document(uid)
+            .setData([
+                "id" : uid,
+                "bucketId": [],
+                "detailId": [],
+                "name" : nickname,
+                "email" : email,
+                "isPremium": true
+            ])
     }
 }

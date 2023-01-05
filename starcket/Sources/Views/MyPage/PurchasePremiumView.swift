@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PurchasePremiumView: View {
     var body: some View {
+        //List
         VStack {
             Text("별킷리스트 Premium을 경험해보세요")
                 .font(.custom("Pretendard-ExtraBold", size: 22))
@@ -79,7 +80,7 @@ struct PurchasePremiumView: View {
                 
             } label: {
                 Text("₩ 2,900")
-                    .modifier(MaxWidthColoredButtonModifier(cornerRadius: 15))
+                    //.modifier(MaxWidthColoredButtonModifier(cornerRadius: 15))
             }
             
             Spacer()

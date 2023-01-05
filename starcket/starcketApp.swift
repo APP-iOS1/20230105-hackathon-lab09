@@ -32,7 +32,7 @@ struct starcketApp: App {
     @StateObject var authStore = AuthStore.shared
 
     var body: some Scene {
-        WindowGroup {
+        WindowGroup {  
             ContentView()
                 .onOpenURL { url in
                     if (AuthApi.isKakaoTalkLoginUrl(url)){
