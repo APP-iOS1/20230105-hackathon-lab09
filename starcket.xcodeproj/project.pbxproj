@@ -7,9 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CD92EFC2966A3D70058F4B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */; };
+
 		0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92EFF2966CA410058F4B6 /* AddStarView.swift */; };
 		0CD92F032966EDC20058F4B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92F022966EDC20058F4B6 /* HomeView.swift */; };
+		958419E22966FC9A00CF4682 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958419E12966FC9A00CF4682 /* WidgetKit.framework */; };
+		958419E42966FC9A00CF4682 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958419E32966FC9A00CF4682 /* SwiftUI.framework */; };
+		958419E72966FC9A00CF4682 /* MyBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958419E62966FC9A00CF4682 /* MyBucket.swift */; };
+		958419EA2966FC9D00CF4682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958419E92966FC9D00CF4682 /* Assets.xcassets */; };
+		958419EC2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */; };
+		958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */; };
+		958419F02966FC9D00CF4682 /* MyBucketExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		958419F52966FD5F00CF4682 /* DeepWaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB72966BAC50028B466 /* DeepWaterWave.swift */; };
+		958419F82966FE3200CF4682 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB52966A9EE0028B466 /* WaterWave.swift */; };
+		958419F92966FE5100CF4682 /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B1529665555007BFE58 /* Ex+Color.swift */; };
+		958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB52966A9EE0028B466 /* WaterWave.swift */; };
+		958FCFB82966BAC50028B466 /* DeepWaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB72966BAC50028B466 /* DeepWaterWave.swift */; };
+		1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */; };
+		1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */; };
+		1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E3296711900024DBB1 /* Ex+Date.swift */; };
+		1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E5296711990024DBB1 /* Ex+String.swift */; };
+		1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */; };
+		8B4377172966F109002D4AAB /* BucketListDetailAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */; };
+		8B4377192966F5F4002D4AAB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4377182966F5F4002D4AAB /* ImagePicker.swift */; };
+		8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B43771A29671C52002D4AAB /* BucketDetailView.swift */; };
+		80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3A2966A45F00737B64 /* GoogleSignIn */; };
+		80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3C2966A45F00737B64 /* GoogleSignInSwift */; };
+		80826E3F2966A55000737B64 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E3E2966A55000737B64 /* AuthStore.swift */; };
+		80826E432966B10C00737B64 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E422966B10C00737B64 /* KakaoSDK */; };
+		80826E452966B85900737B64 /* TxtfieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E442966B85900737B64 /* TxtfieldModifier.swift */; };
+		80826E4E2966C04200737B64 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E4D2966C04200737B64 /* PopupView */; };
+		80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E4F2966C5DA00737B64 /* SignUpAuthStore.swift */; };
+		80826E5E2966D8CF00737B64 /* SignUpStep2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E592966D8CF00737B64 /* SignUpStep2View.swift */; };
+		80826E5F2966D8CF00737B64 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5A2966D8CF00737B64 /* SafariView.swift */; };
+		80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5B2966D8CF00737B64 /* SignUpStep1View.swift */; };
+		80826E612966D8CF00737B64 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5C2966D8CF00737B64 /* SignUpView.swift */; };
+		80826E622966D8CF00737B64 /* TermType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E5D2966D8CF00737B64 /* TermType.swift */; };
+		80826E642966E04E00737B64 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E632966E04E00737B64 /* MoreView.swift */; };
+		80826E682966E42F00737B64 /* PurchasePremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E672966E42F00737B64 /* PurchasePremiumView.swift */; };
+		80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E692966E4A100737B64 /* EditProfileView.swift */; };
+		80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E6B2966E7EE00737B64 /* SendOpinion.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -22,6 +58,7 @@
 		C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3429665D0B007BFE58 /* SplashView.swift */; };
 		C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3629665D17007BFE58 /* SignInView.swift */; };
 		C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3829665D1D007BFE58 /* SignUpView.swift */; };
+		C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3A29665D24007BFE58 /* HomeView.swift */; };
 		C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3C29665D2B007BFE58 /* BucketListView.swift */; };
 		C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */; };
 		C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B4029665D40007BFE58 /* MyPageView.swift */; };
@@ -35,10 +72,64 @@
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		958419EE2966FC9D00CF4682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C45C0AF0296653A1007BFE58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 958419DE2966FC9A00CF4682;
+			remoteInfo = MyBucketExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		958419F12966FC9D00CF4682 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				958419F02966FC9D00CF4682 /* MyBucketExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+
 		0CD92EFF2966CA410058F4B6 /* AddStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStarView.swift; sourceTree = "<group>"; };
 		0CD92F022966EDC20058F4B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyBucketExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		958419E12966FC9A00CF4682 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		958419E32966FC9A00CF4682 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		958419E62966FC9A00CF4682 /* MyBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucket.swift; sourceTree = "<group>"; };
+		958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyBucket.intentdefinition; sourceTree = "<group>"; };
+		958419E92966FC9D00CF4682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		958419EB2966FC9D00CF4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958FCFB52966A9EE0028B466 /* WaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
+		958FCFB72966BAC50028B466 /* DeepWaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWaterWave.swift; sourceTree = "<group>"; };
+		1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListAddView.swift; sourceTree = "<group>"; };
+		1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BucketDetailStore.swift; sourceTree = "<group>"; };
+		1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailListView.swift; sourceTree = "<group>"; };
+		1A3AE9E3296711900024DBB1 /* Ex+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
+		1A3AE9E5296711990024DBB1 /* Ex+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
+		8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListDetailAddView.swift; sourceTree = "<group>"; };
+		8B4377182966F5F4002D4AAB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8B43771A29671C52002D4AAB /* BucketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailView.swift; sourceTree = "<group>"; };
+		80826E3E2966A55000737B64 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
+		80826E402966AE2900737B64 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		80826E442966B85900737B64 /* TxtfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtfieldModifier.swift; sourceTree = "<group>"; };
+		80826E4F2966C5DA00737B64 /* SignUpAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAuthStore.swift; sourceTree = "<group>"; };
+		80826E592966D8CF00737B64 /* SignUpStep2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep2View.swift; sourceTree = "<group>"; };
+		80826E5A2966D8CF00737B64 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		80826E5B2966D8CF00737B64 /* SignUpStep1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep1View.swift; sourceTree = "<group>"; };
+		80826E5C2966D8CF00737B64 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		80826E5D2966D8CF00737B64 /* TermType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermType.swift; sourceTree = "<group>"; };
+		80826E632966E04E00737B64 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		80826E672966E42F00737B64 /* PurchasePremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePremiumView.swift; sourceTree = "<group>"; };
+		80826E692966E4A100737B64 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		80826E6B2966E7EE00737B64 /* SendOpinion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendOpinion.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +153,7 @@
 		C45C0B3429665D0B007BFE58 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		C45C0B3629665D17007BFE58 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		C45C0B3829665D1D007BFE58 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C45C0B3A29665D24007BFE58 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C45C0B3C29665D2B007BFE58 /* BucketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
 		C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
 		C45C0B4029665D40007BFE58 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
@@ -72,24 +164,68 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		958419DC2966FC9A00CF4682 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958419E42966FC9A00CF4682 /* SwiftUI.framework in Frameworks */,
+				958419E22966FC9A00CF4682 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C45C0AF5296653A1007BFE58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80826E4E2966C04200737B64 /* PopupView in Frameworks */,
+				80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */,
 				C45C0B4C2966886D007BFE58 /* FirebaseAuth in Frameworks */,
 				C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */,
+				80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */,
 				C45C0B4E2966886D007BFE58 /* FirebaseFirestore in Frameworks */,
 				C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */,
+				80826E432966B10C00737B64 /* KakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		958419E02966FC9A00CF4682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				958419E12966FC9A00CF4682 /* WidgetKit.framework */,
+				958419E32966FC9A00CF4682 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		958419E52966FC9A00CF4682 /* MyBucket */ = {
+			isa = PBXGroup;
+			children = (
+				958419E62966FC9A00CF4682 /* MyBucket.swift */,
+				958419E82966FC9A00CF4682 /* MyBucket.intentdefinition */,
+				958419E92966FC9D00CF4682 /* Assets.xcassets */,
+				958419EB2966FC9D00CF4682 /* Info.plist */,
+			);
+			path = MyBucket;
+			sourceTree = "<group>";
+		};
+		958FCFB42966A9CE0028B466 /* subViews */ = {
+			isa = PBXGroup;
+			children = (
+				958FCFB52966A9EE0028B466 /* WaterWave.swift */,
+				958FCFB72966BAC50028B466 /* DeepWaterWave.swift */,
+			);
+			path = subViews;
+			sourceTree = "<group>";
+		};
 		C45C0AEF296653A1007BFE58 = {
 			isa = PBXGroup;
 			children = (
 				C45C0AFA296653A1007BFE58 /* starcket */,
+				958419E52966FC9A00CF4682 /* MyBucket */,
+				958419E02966FC9A00CF4682 /* Frameworks */,
 				C45C0AF9296653A1007BFE58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0AF8296653A1007BFE58 /* starcket.app */,
+				958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,11 +242,12 @@
 		C45C0AFA296653A1007BFE58 /* starcket */ = {
 			isa = PBXGroup;
 			children = (
+				958FCFB22966A92D0028B466 /* GoogleService-Info.plist */,
 				C45C0B20296655BB007BFE58 /* Info.plist */,
-				0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
+				80826E402966AE2900737B64 /* Config.xcconfig */,
 				C45C0AFF296653A3007BFE58 /* Assets.xcassets */,
 				C45C0B01296653A3007BFE58 /* Preview Content */,
 			);
@@ -154,6 +292,10 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B48296686EB007BFE58 /* BucketStore.swift */,
+				1A3AE9DF2966D7F70024DBB1 /* BucketDetailStore.swift */,
+				80826E3E2966A55000737B64 /* AuthStore.swift */,
+				80826E4F2966C5DA00737B64 /* SignUpAuthStore.swift */,
+
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -191,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B1529665555007BFE58 /* Ex+Color.swift */,
+				1A3AE9E3296711900024DBB1 /* Ex+Date.swift */,
+				1A3AE9E5296711990024DBB1 /* Ex+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B2129665851007BFE58 /* BtnModifier.swift */,
+				80826E442966B85900737B64 /* TxtfieldModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -256,7 +401,11 @@
 		C45C0B2D29665BEA007BFE58 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				C45C0B3829665D1D007BFE58 /* SignUpView.swift */,
+				80826E5C2966D8CF00737B64 /* SignUpView.swift */,
+				80826E5B2966D8CF00737B64 /* SignUpStep1View.swift */,
+				80826E592966D8CF00737B64 /* SignUpStep2View.swift */,
+				80826E5D2966D8CF00737B64 /* TermType.swift */,
+				80826E5A2966D8CF00737B64 /* SafariView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -265,6 +414,11 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3C29665D2B007BFE58 /* BucketListView.swift */,
+				1A3AE9D92966AE460024DBB1 /* BucketListAddView.swift */,
+				1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */,
+				8B4377162966F109002D4AAB /* BucketListDetailAddView.swift */,
+				8B43771A29671C52002D4AAB /* BucketDetailView.swift */,
+				8B4377182966F5F4002D4AAB /* ImagePicker.swift */,
 			);
 			path = BucketList;
 			sourceTree = "<group>";
@@ -273,6 +427,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3E29665D37007BFE58 /* AnalyzeView.swift */,
+				958FCFB42966A9CE0028B466 /* subViews */,
 			);
 			path = Analyze;
 			sourceTree = "<group>";
@@ -281,6 +436,10 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B4029665D40007BFE58 /* MyPageView.swift */,
+				80826E692966E4A100737B64 /* EditProfileView.swift */,
+				80826E672966E42F00737B64 /* PurchasePremiumView.swift */,
+				80826E632966E04E00737B64 /* MoreView.swift */,
+				80826E6B2966E7EE00737B64 /* SendOpinion.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -304,6 +463,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		958419DE2966FC9A00CF4682 /* MyBucketExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958419F42966FC9D00CF4682 /* Build configuration list for PBXNativeTarget "MyBucketExtension" */;
+			buildPhases = (
+				958419DB2966FC9A00CF4682 /* Sources */,
+				958419DC2966FC9A00CF4682 /* Frameworks */,
+				958419DD2966FC9A00CF4682 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBucketExtension;
+			productName = MyBucketExtension;
+			productReference = 958419DF2966FC9A00CF4682 /* MyBucketExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C45C0AF7296653A1007BFE58 /* starcket */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C45C0B06296653A3007BFE58 /* Build configuration list for PBXNativeTarget "starcket" */;
@@ -311,10 +487,12 @@
 				C45C0AF4296653A1007BFE58 /* Sources */,
 				C45C0AF5296653A1007BFE58 /* Frameworks */,
 				C45C0AF6296653A1007BFE58 /* Resources */,
+				958419F12966FC9D00CF4682 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				958419EF2966FC9D00CF4682 /* PBXTargetDependency */,
 			);
 			name = starcket;
 			packageProductDependencies = (
@@ -322,6 +500,10 @@
 				C45C0B4D2966886D007BFE58 /* FirebaseFirestore */,
 				C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */,
 				C45C0B512966886D007BFE58 /* FirebaseStorage */,
+				80826E3A2966A45F00737B64 /* GoogleSignIn */,
+				80826E3C2966A45F00737B64 /* GoogleSignInSwift */,
+				80826E422966B10C00737B64 /* KakaoSDK */,
+				80826E4D2966C04200737B64 /* PopupView */,
 			);
 			productName = starcket;
 			productReference = C45C0AF8296653A1007BFE58 /* starcket.app */;
@@ -334,9 +516,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					958419DE2966FC9A00CF4682 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					C45C0AF7296653A1007BFE58 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -353,61 +538,175 @@
 			mainGroup = C45C0AEF296653A1007BFE58;
 			packageReferences = (
 				C45C0B4A2966886D007BFE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				80826E412966B10C00737B64 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				80826E4C2966C04200737B64 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = C45C0AF9296653A1007BFE58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C45C0AF7296653A1007BFE58 /* starcket */,
+				958419DE2966FC9A00CF4682 /* MyBucketExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		958419DD2966FC9A00CF4682 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958419EA2966FC9D00CF4682 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C45C0AF6296653A1007BFE58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
+				958FCFB32966A92F0028B466 /* GoogleService-Info.plist in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
-				0CD92EFC2966A3D70058F4B6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		958419DB2966FC9A00CF4682 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958419F82966FE3200CF4682 /* WaterWave.swift in Sources */,
+				958419EC2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
+				958419F92966FE5100CF4682 /* Ex+Color.swift in Sources */,
+				958419F52966FD5F00CF4682 /* DeepWaterWave.swift in Sources */,
+				958419E72966FC9A00CF4682 /* MyBucket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C45C0AF4296653A1007BFE58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */,
 				C45C0B4529665D73007BFE58 /* ETC.swift in Sources */,
+				1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
+				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
+				80826E642966E04E00737B64 /* MoreView.swift in Sources */,
 				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
+				80826E612966D8CF00737B64 /* SignUpView.swift in Sources */,
+				80826E682966E42F00737B64 /* PurchasePremiumView.swift in Sources */,
 				C45C0B1629665555007BFE58 /* Ex+Color.swift in Sources */,
+				8B4377192966F5F4002D4AAB /* ImagePicker.swift in Sources */,
 				C45C0B3529665D0B007BFE58 /* SplashView.swift in Sources */,
+				958FCFB82966BAC50028B466 /* DeepWaterWave.swift in Sources */,
+				8B4377172966F109002D4AAB /* BucketListDetailAddView.swift in Sources */,
+				80826E5E2966D8CF00737B64 /* SignUpStep2View.swift in Sources */,
 				C45C0B2229665851007BFE58 /* BtnModifier.swift in Sources */,
 				C45C0B49296686EB007BFE58 /* BucketStore.swift in Sources */,
+				80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
+				1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */,
+				80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */,
+				80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */,
 				C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */,
+				80826E5F2966D8CF00737B64 /* SafariView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
+				958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
+				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
+				958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */,
+				8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */,
+				80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */,
+				C45C0B3B29665D24007BFE58 /* HomeView.swift in Sources */,
+				80826E452966B85900737B64 /* TxtfieldModifier.swift in Sources */,
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
-				C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */,
+				80826E3F2966A55000737B64 /* AuthStore.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
+				80826E622966D8CF00737B64 /* TermType.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
 				0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */,
 				C45C0B1429665512007BFE58 /* Constants.swift in Sources */,
 				C45C0B4329665D48007BFE58 /* NotificationView.swift in Sources */,
 				0CD92F032966EDC20058F4B6 /* HomeView.swift in Sources */,
+				1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		958419EF2966FC9D00CF4682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 958419DE2966FC9A00CF4682 /* MyBucketExtension */;
+			targetProxy = 958419EE2966FC9D00CF4682 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		958419F22966FC9D00CF4682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6SBNPMLX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBucket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyBucket;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = likelion.hackathon.starcket.MyBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		958419F32966FC9D00CF4682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SF6SBNPMLX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyBucket/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyBucket;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = likelion.hackathon.starcket.MyBucket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C45C0B04296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80826E402966AE2900737B64 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -468,6 +767,7 @@
 		};
 		C45C0B05296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80826E402966AE2900737B64 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -522,13 +822,15 @@
 		};
 		C45C0B07296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80826E402966AE2900737B64 /* Config.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"starcket/Preview Content\"";
-				DEVELOPMENT_TEAM = SF6SBNPMLX;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = starcket/Info.plist;
@@ -553,13 +855,15 @@
 		};
 		C45C0B08296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80826E402966AE2900737B64 /* Config.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"starcket/Preview Content\"";
-				DEVELOPMENT_TEAM = SF6SBNPMLX;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = starcket/Info.plist;
@@ -585,6 +889,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		958419F42966FC9D00CF4682 /* Build configuration list for PBXNativeTarget "MyBucketExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958419F22966FC9D00CF4682 /* Debug */,
+				958419F32966FC9D00CF4682 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C45C0AF3296653A1007BFE58 /* Build configuration list for PBXProject "starcket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -606,6 +919,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		80826E412966B10C00737B64 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		80826E4C2966C04200737B64 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		C45C0B4A2966886D007BFE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -617,6 +954,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		80826E3A2966A45F00737B64 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		80826E3C2966A45F00737B64 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80826E392966A45F00737B64 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		80826E422966B10C00737B64 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80826E412966B10C00737B64 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		80826E4D2966C04200737B64 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80826E4C2966C04200737B64 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
 		C45C0B4B2966886D007BFE58 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C45C0B4A2966886D007BFE58 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
