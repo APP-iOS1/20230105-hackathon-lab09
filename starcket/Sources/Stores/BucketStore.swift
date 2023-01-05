@@ -37,13 +37,14 @@ class BucketStore: ObservableObject {
 			let detailId: [String] = docData["detailId"] as? [String] ?? []
 			let icon: String = docData["icon"] as? String ?? ""
 			let title: String = docData["title"] as? String ?? ""
-			let isCheck: Bool = docData["isCheck"] as? Bool ?? false
+            let isCheck: Bool = docData["isCheck"] as? Bool ?? false
+			let isFloat: Bool = docData["isFloat"] as? Bool ?? false
 			let pos: [Double] = docData["pos"] as? [Double] ?? []
 			let shape: Int = docData["shape"] as? Int ?? 0
 			let updatedAt: Timestamp = docData["updatedAt"] as! Timestamp
 			let createdAt: Timestamp = docData["createdAt"] as! Timestamp
 			
-			data.append(Bucket(id: id, userId: userId, detailId: detailId, icon: icon, title: title, isCheck: isCheck, pos: pos, shape: shape, updatedAt: updatedAt.dateValue(), createdAt: createdAt.dateValue()))
+            data.append(Bucket(id: id, userId: userId, detailId: detailId, icon: icon, title: title, isCheck: isCheck, isFloat: isFloat, pos: pos, shape: shape, updatedAt: updatedAt.dateValue(), createdAt: createdAt.dateValue()))
 		}
 		
 		return (data, bucketIdList)
@@ -59,7 +60,8 @@ class BucketStore: ObservableObject {
 			"detailId": bucket.detailId,
 			"icon": bucket.icon,
 			"title": bucket.title,
-			"isCheck": bucket.isCheck,
+            "isCheck": bucket.isCheck,
+			"isFloat": bucket.isFloat,
 			"pos": bucket.pos,
 			"shape": bucket.shape,
 			"updatedAt": bucket.updatedAt,
@@ -82,7 +84,8 @@ class BucketStore: ObservableObject {
 			"detailId": bucket.detailId,
 			"icon": bucket.icon,
 			"title": bucket.title,
-			"isCheck": bucket.isCheck,
+            "isCheck": bucket.isCheck,
+			"isFloat": bucket.isFloat,
 			"pos": bucket.pos,
 			"shape": bucket.shape,
 			"updatedAt": bucket.updatedAt,

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD92EFC2966A3D70058F4B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */; };
+		0CD92F002966CA410058F4B6 /* AddStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92EFF2966CA410058F4B6 /* AddStarView.swift */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -31,10 +33,11 @@
 		C45C0B4E2966886D007BFE58 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4D2966886D007BFE58 /* FirebaseFirestore */; };
 		C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */; };
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
-		C45C0B5429668E0E007BFE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C45C0B5329668E0D007BFE58 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CD92EFF2966CA410058F4B6 /* AddStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStarView.swift; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +69,6 @@
 		C45C0B4429665D73007BFE58 /* ETC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETC.swift; sourceTree = "<group>"; };
 		C45C0B46296684C5007BFE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45C0B48296686EB007BFE58 /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
-		C45C0B5329668E0D007BFE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B20296655BB007BFE58 /* Info.plist */,
-				C45C0B5329668E0D007BFE58 /* GoogleService-Info.plist */,
+				0CD92EFB2966A3D70058F4B6 /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3A29665D24007BFE58 /* HomeView.swift */,
+				0CD92EFF2966CA410058F4B6 /* AddStarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -367,7 +370,7 @@
 			files = (
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
-				C45C0B5429668E0E007BFE58 /* GoogleService-Info.plist in Resources */,
+				0CD92EFC2966A3D70058F4B6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +397,7 @@
 				C45C0B3929665D1D007BFE58 /* SignUpView.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
+				0CD92F002966CA410058F4B6 /* AddStarView.swift in Sources */,
 				C45C0B1429665512007BFE58 /* Constants.swift in Sources */,
 				C45C0B4329665D48007BFE58 /* NotificationView.swift in Sources */,
 			);

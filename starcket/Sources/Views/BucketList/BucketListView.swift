@@ -26,7 +26,7 @@ struct BucketListView: View {
 						Text("\(bucket.updatedAt)")
 						Text("\(bucket.createdAt)")
 						Button {
-							let bucket = Bucket(id: UUID().uuidString, userId: "7BW5aWDlcP8E5NllOu4f", detailId: [], icon: "✈️", title: "제주도 여행가기", isCheck: false, pos: [0.0, 0.0], shape: 0, updatedAt: Date(), createdAt: Date())
+                            let bucket = Bucket(id: UUID().uuidString, userId: "7BW5aWDlcP8E5NllOu4f", detailId: [], icon: "✈️", title: "제주도 여행가기", isCheck: false, isFloat: false, pos: [0.0, 0.0], shape: 0, updatedAt: Date(), createdAt: Date())
 							bucketStore.createBucket(bucket)
 						} label: {
 							Text("추가")
