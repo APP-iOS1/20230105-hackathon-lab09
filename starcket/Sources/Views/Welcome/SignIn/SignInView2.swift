@@ -120,3 +120,4 @@ struct SignInView2_Previews: PreviewProvider {
             .environmentObject(SignUpAuthStore())
     }
 }
+

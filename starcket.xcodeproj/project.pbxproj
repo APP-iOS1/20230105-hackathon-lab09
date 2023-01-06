@@ -15,10 +15,6 @@
 		1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E3296711900024DBB1 /* Ex+Date.swift */; };
 		1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E5296711990024DBB1 /* Ex+String.swift */; };
 		1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */; };
-		1AAF2E5A2967E109000E49FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF2E592967E109000E49FE /* GoogleService-Info.plist */; };
-		1AAF2E5C2967E1B2000E49FE /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */; };
-		1AAF2E5E2967E302000E49FE /* SignInView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF2E5D2967E302000E49FE /* SignInView2.swift */; };
-		1AAF2E602967E34C000E49FE /* EmailSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF2E5F2967E34C000E49FE /* EmailSignInView.swift */; };
 		806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806C0A652967540D00ADE0D1 /* SoohyunTest.swift */; };
 		80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3A2966A45F00737B64 /* GoogleSignIn */; };
 		80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3C2966A45F00737B64 /* GoogleSignInSwift */; };
@@ -51,6 +47,11 @@
 		958419F92966FE5100CF4682 /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B1529665555007BFE58 /* Ex+Color.swift */; };
 		958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB52966A9EE0028B466 /* WaterWave.swift */; };
 		958FCFB82966BAC50028B466 /* DeepWaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB72966BAC50028B466 /* DeepWaterWave.swift */; };
+		95CD7F942967E44F00DA70E7 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95CD7F922967E44F00DA70E7 /* Config.xcconfig */; };
+		95CD7F952967E44F00DA70E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95CD7F932967E44F00DA70E7 /* GoogleService-Info.plist */; };
+		95CD7F972967E48400DA70E7 /* SignInView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD7F962967E48400DA70E7 /* SignInView2.swift */; };
+		95CD7F992967E4FC00DA70E7 /* EmailSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD7F982967E4FC00DA70E7 /* EmailSignInView.swift */; };
+		95CD7F9B2967E8D800DA70E7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CD7F9A2967E8D800DA70E7 /* Launch Screen.storyboard */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
 		C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45C0AFF296653A3007BFE58 /* Assets.xcassets */; };
@@ -109,10 +110,6 @@
 		1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailListView.swift; sourceTree = "<group>"; };
 		1A3AE9E3296711900024DBB1 /* Ex+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
 		1A3AE9E5296711990024DBB1 /* Ex+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
-		1AAF2E592967E109000E49FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		1AAF2E5D2967E302000E49FE /* SignInView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView2.swift; sourceTree = "<group>"; };
-		1AAF2E5F2967E34C000E49FE /* EmailSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInView.swift; sourceTree = "<group>"; };
 		806C0A652967540D00ADE0D1 /* SoohyunTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoohyunTest.swift; sourceTree = "<group>"; };
 		80826E3E2966A55000737B64 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		80826E442966B85900737B64 /* TxtfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtfieldModifier.swift; sourceTree = "<group>"; };
@@ -138,6 +135,11 @@
 		958419EB2966FC9D00CF4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958FCFB52966A9EE0028B466 /* WaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
 		958FCFB72966BAC50028B466 /* DeepWaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWaterWave.swift; sourceTree = "<group>"; };
+		95CD7F922967E44F00DA70E7 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		95CD7F932967E44F00DA70E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../googlInfo/hackerton/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95CD7F962967E48400DA70E7 /* SignInView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView2.swift; sourceTree = "<group>"; };
+		95CD7F982967E4FC00DA70E7 /* EmailSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInView.swift; sourceTree = "<group>"; };
+		95CD7F9A2967E8D800DA70E7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
 		C45C0AFD296653A1007BFE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 		C45C0B2929665BAF007BFE58 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				95CD7F9A2967E8D800DA70E7 /* Launch Screen.storyboard */,
 				C45C0B3429665D0B007BFE58 /* SplashView.swift */,
 			);
 			path = Splash;
@@ -586,8 +589,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CD7F9B2967E8D800DA70E7 /* Launch Screen.storyboard in Resources */,
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
-				1AAF2E5C2967E1B2000E49FE /* Config.xcconfig in Resources */,
 				C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
 				1AAF2E5A2967E109000E49FE /* GoogleService-Info.plist in Resources */,
@@ -645,6 +648,7 @@
 				958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
 				806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */,
 				958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */,
+				95CD7F972967E48400DA70E7 /* SignInView2.swift in Sources */,
 				8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */,
 				80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */,
 				80826E452966B85900737B64 /* TxtfieldModifier.swift in Sources */,
@@ -861,6 +865,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -894,6 +899,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;

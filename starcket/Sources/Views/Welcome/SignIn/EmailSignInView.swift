@@ -73,12 +73,14 @@ struct EmailSignInView: View {
                         .disableAutocorrection(true)
                         .textInputAutocapitalization(.never)
                         .foregroundColor(.black)
+
                 }
                 .padding(.horizontal, 20)
             }
             .padding(.bottom, 70)
             //.background(.white)
             
+
             NavigationLink {
                 ContentView()
             } label: {
@@ -91,16 +93,7 @@ struct EmailSignInView: View {
                     .background(Color("mainColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .padding(EdgeInsets(top: 5, leading: 20, bottom: 0, trailing: 20))
-            }
-
-//            Button {
-////                logInWithEmailPassword()
-//
-//            } label: {
-//            }
-
-            
-            
+            }          
         }
         .navigationTitle("이메일 로그인")
         .accentColor(.white)
