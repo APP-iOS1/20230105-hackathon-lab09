@@ -83,7 +83,7 @@ struct BucketListView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
                 //                Color(hex: "FDFCED")
-                Color("bgColor")
+                Color("tempBgColor2")
             }
             .navigationBarItems(trailing:Button(action: {
                 isClickMarker.toggle()

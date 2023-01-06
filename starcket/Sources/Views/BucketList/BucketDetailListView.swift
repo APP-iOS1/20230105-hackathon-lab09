@@ -21,7 +21,7 @@ struct BucketDetailListView: View {
                 VStack {
                     ForEach(bucketDetailStore.bucketDetail) { bucket in
                         NavigationLink {
-                            
+                            BucketDetailView()
                         } label: {
                             HStack {
                                 Text(bucket.title)
@@ -64,17 +64,17 @@ struct BucketDetailListView: View {
             .background(Color("mainColor"))
             .cornerRadius(40)
             .padding()
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing){
-                    
-                    NavigationLink {
-                        BucketListDetailAddView()
-                    } label: {
-                        Image(systemName: "plus.circle")
-                            .font(.system(size: 22, weight: .semibold))
-                    }
-
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing){
+                
+                NavigationLink {
+                    BucketListDetailAddView()
+                } label: {
+                    Image(systemName: "plus.circle")
+                        .font(.system(size: 22, weight: .semibold))
                 }
+
             }
         }
         .onAppear {
