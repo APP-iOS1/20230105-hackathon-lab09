@@ -86,7 +86,7 @@ struct ColoredButtonModifier: ViewModifier {
 ///버튼 크기에 따라 cornerRadius를 5, 10 으로 구분지어 사용하면 된다
 
 struct MaxWidthColoredButtonModifier: ViewModifier {
-	var color: Color = Color("AccentColor")
+	var color: Color = Color("mainColor")
 	var cornerRadius: CGFloat
 
 	func body(content: Content) -> some View {
