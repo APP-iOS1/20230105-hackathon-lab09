@@ -141,6 +141,7 @@ class SignUpAuthStore: ObservableObject {
             // 현재 로그인 한 유저의 정보 담아주는 코드
             // 변경이 필요함!
             let userNickname = await requestUserNickname(uid: authentification.currentUser?.uid ?? "")
+            authStore.loginPlatform = .email
             self.currentUser = User(id: self.authentification.currentUser?.uid ?? "", bucketId: [], detailId: [], name: userNickname, email: email, isPremium: true)
             UserDefaults.standard.set(self.authentification.currentUser?.uid, forKey: "userIdToken")
             //print("userIdToken \(self.authentification.currentUser?.uid)")
