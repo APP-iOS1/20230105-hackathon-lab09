@@ -38,12 +38,12 @@ struct ContentView: View {
 
                 
         
-                // 수현 테스트용
-                SoohyunTest()
-                    .tabItem {
-                        Image(systemName: "star")
-                        Text("실험용")
-                    }
+//                // 수현 테스트용
+//                SoohyunTest()
+//                    .tabItem {
+//                        Image(systemName: "star")
+//                        Text("실험용")
+//                    }
             }
             
 //            if UserDefaults.standard.object(forKey: "userIdToken") != nil {
