@@ -24,10 +24,13 @@ struct BucketListView: View {
                             bucketStore.isLoading = false
                         }
                     } label: {
-                        Image(systemName:"arrowtriangle.left.fill")
+                        Image(systemName:"chevron.left")
+                            .font(.title2)
+                            .foregroundColor(.gray)
                     }
                     Text("\(String(year))년")
-                        .padding(.horizontal, Screen.maxWidth * 0.2)
+                        .padding(.horizontal, 20)
+                        .font(.custom("KNPSKkomi-Regular", size: 22))
                     Button {
                         if year < 2023 {
                             year += 1
@@ -38,10 +41,12 @@ struct BucketListView: View {
                             bucketStore.isLoading = false
                         }
                     } label: {
-                        Image(systemName:"arrowtriangle.right.fill")
+                        Image(systemName:"chevron.right")
+                            .font(.title2)
+                            .foregroundColor(.gray)
                     }
                 }
-                .font(.custom("Pretendard-Regular", size: 25))
+                .font(.custom("KNPSKkomi-Regular", size: 25))
                 .padding(.vertical, Screen.maxWidth * 0.07)
                 if bucketStore.isLoading {
                     Spacer()
@@ -51,18 +56,18 @@ struct BucketListView: View {
                     Spacer()
                 } else {
                     ScrollView {
-                        VStack(alignment: .leading, spacing: 20) {
+                        VStack(alignment: .leading, spacing: 15) {
                             ForEach(bucketStore.bucket) { bucket in
                                 NavigationLink {
                                     BucketDetailListView(bucketStore: bucketStore, detailIdList: bucket.detailId, bucketId: bucket.id, year: $year, isCheck: bucket.isCheck)
                                 } label: {
                                     HStack {
                                         Text(bucket.icon)
-                                            .font(.custom("Pretendard-Regular", size: 25))
+                                            .font(.custom("KNPSKkomi-Regular", size: 25))
                                         
                                             .padding(.trailing,Screen.maxWidth * 0.01)
                                         Text(bucket.title)
-                                            .font(.custom("Pretendard-Regular", size: 18))
+                                            .font(.custom("KNPSKkomi-Regular", size: 18))
                                     }
                                     .padding(.leading, Screen.maxWidth * 0.06)
                                     .frame(width: Screen.maxWidth * 0.87, height: Screen.maxHeight * 0.09, alignment: .leading)
@@ -80,18 +85,16 @@ struct BucketListView: View {
                     }
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background {
-                //                Color(hex: "FDFCED")
-                Color("tempBgColor2")
-            }
             .navigationBarItems(trailing:Button(action: {
                 isClickMarker.toggle()
             }, label: {
                 Image(systemName: "plus.circle")
-                    .font(.system(size: 22, weight: .semibold))
+                    .font(.system(size: 22, weight: .light))
             }))
-            .navigationBarTitle("나의 별킷리스트", displayMode: .inline)
+            .navigationBarTitle("나의 별킷리스트")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color("bgColor"))
+            
             .sheet(isPresented: $isClickMarker) {
                 BucketListAddView(isClickMarker: $isClickMarker)
                     .presentationDetents([.fraction(0.8)])

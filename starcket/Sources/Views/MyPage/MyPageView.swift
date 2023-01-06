@@ -26,7 +26,7 @@ struct MyPageView: View {
         case .kakao, .google:
             return authStore.currentUser?.name ?? ""
         default:
-            return "로그인해주세요"
+            return "여구름"
         }
         
     }
@@ -37,7 +37,7 @@ struct MyPageView: View {
         case .kakao, .google:
             return authStore.currentUser?.email ?? ""
         default:
-            return ""
+            return "yuhsohee120@gmail.com"
         }
         
     }
