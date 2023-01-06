@@ -22,7 +22,7 @@ struct BucketDetailListView: View {
                 VStack {
                     ForEach(bucketDetailStore.bucketDetail, id: \.id) { bucket in
                         NavigationLink {
-                            Text("gd")
+                            BucketDetailView()
                         } label: {
                             
                             HStack(alignment: .bottom) {

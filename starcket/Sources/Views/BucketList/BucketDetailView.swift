@@ -52,7 +52,7 @@ struct BucketDetailView: View {
             }
             
         }
-        .padding(.top, 30)
+        .padding(.top, -20)
         .background{
             Color("tempBgColor")
                 .edgesIgnoringSafeArea(.all)
