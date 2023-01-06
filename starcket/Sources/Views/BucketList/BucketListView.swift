@@ -101,7 +101,7 @@ struct BucketListView: View {
             .onAppear {
                 bucketStore.isLoading = true
                 Task {
-                    UserDefaults.standard.set("WJuLT2Ca3ucjdiSCmTh5756qNIC3", forKey: "userIdToken")
+                    UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
                     (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
                     bucketStore.isLoading = false
                 }

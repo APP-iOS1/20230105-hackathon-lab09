@@ -72,6 +72,9 @@
 		C45C0B4E2966886D007BFE58 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4D2966886D007BFE58 /* FirebaseFirestore */; };
 		C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */; };
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
+		C4B2AC032967C82900EB34DF /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC022967C82900EB34DF /* Config.xcconfig */; };
+		C4B2AC052967C83800EB34DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */; };
+		C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +168,9 @@
 		C45C0B4429665D73007BFE58 /* ETC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETC.swift; sourceTree = "<group>"; };
 		C45C0B46296684C5007BFE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45C0B48296686EB007BFE58 /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
+		C4B2AC022967C82900EB34DF /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KNPSKkomi.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B20296655BB007BFE58 /* Info.plist */,
-				806C0A6B2967C3EE00ADE0D1 /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
@@ -364,6 +369,7 @@
 				C45C0B19296655A2007BFE58 /* Pretendard-Regular.otf */,
 				C45C0B1B296655A2007BFE58 /* Pretendard-SemiBold.otf */,
 				C45C0B1E296655A3007BFE58 /* Pretendard-Thin.otf */,
+				C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -582,8 +588,10 @@
 			files = (
 				806C0A6E2967C3FA00ADE0D1 /* Config.xcconfig in Resources */,
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
+				C4B2AC052967C83800EB34DF /* GoogleService-Info.plist in Resources */,
+				C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */,
+				C4B2AC032967C82900EB34DF /* Config.xcconfig in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
-				806C0A6C2967C3EE00ADE0D1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
