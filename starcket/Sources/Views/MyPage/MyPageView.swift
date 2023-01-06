@@ -11,7 +11,7 @@ import Firebase
 
 struct MyPageView: View {
     @State var faceIDToggle: Bool = false
-    @State var darkmodeToggle: Bool = false
+    @State var darkmodeToggle: Bool = true
     @State var pushNotiToggle: Bool = false
     @State var logOutAlert: Bool = false
     
