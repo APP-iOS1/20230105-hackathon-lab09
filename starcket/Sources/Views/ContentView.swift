@@ -13,38 +13,38 @@ struct ContentView: View {
     
     var body: some View {
 //        NavigationView {
-            SignInView()
-//            TabView(selection: $tabSelection) {
-//                HomeView()
-//                    .tabItem {
-//                        Image(systemName: "house.fill")
-//                        Text("별킷")
-//                    }.tag(0)
-//                BucketListView()
-//                    .tabItem {
-//                        Image(systemName: "checklist.checked")
-//                        Text("리스트")
-//                    }.tag(1)
-//                AnalyzeView()
-//                    .tabItem {
-//                        Image(systemName: "chart.bar.xaxis")
-//                        Text("분석")
-//                    }.tag(2)
-//                MyPageView()
-//                    .tabItem {
-//                        Image(systemName: "person.crop.circle.fill")
-//                        Text("마이페이지")
-//                    }.tag(3)
-//
-//
-//
+//            SignInView()
+            TabView(selection: $tabSelection) {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("별킷")
+                    }.tag(0)
+                BucketListView()
+                    .tabItem {
+                        Image(systemName: "checklist.checked")
+                        Text("리스트")
+                    }.tag(1)
+                AnalyzeView()
+                    .tabItem {
+                        Image(systemName: "chart.bar.xaxis")
+                        Text("분석")
+                    }.tag(2)
+                MyPageView()
+                    .tabItem {
+                        Image(systemName: "person.crop.circle.fill")
+                        Text("마이페이지")
+                    }.tag(3)
+
+                
+        
 //                // 수현 테스트용
 //                SoohyunTest()
 //                    .tabItem {
 //                        Image(systemName: "star")
 //                        Text("실험용")
 //                    }
-//            }
+            }
             
 //            if UserDefaults.standard.object(forKey: "userIdToken") != nil {
 //                TabView(selection: $tabSelection) {

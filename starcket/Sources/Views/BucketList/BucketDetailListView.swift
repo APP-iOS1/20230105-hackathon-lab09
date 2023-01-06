@@ -26,10 +26,10 @@ struct BucketDetailListView: View {
                         } label: {
                             HStack(alignment: .bottom) {
                                 Text(bucket.title)
-                                    .font(.custom("Pretendard-Regular", size: 18))
+                                    .font(.custom("KNPSKkomi-Regular", size: 20))
                                 Spacer()
                                 Text("\(bucket.createdDate)")
-                                    .font(.custom("Pretendard-Regular", size: 12))
+                                    .font(.custom("KNPSKkomi-Regular", size: 14))
                                     .foregroundColor(.gray)
                             }
                             .padding(.horizontal, Screen.maxWidth * 0.06)
@@ -63,16 +63,13 @@ struct BucketDetailListView: View {
             } label: {
                 if isCheck {
                 Text("별킷 달성 완료")
+                        .font(.custom("KNPSKkomi-Regular", size: 18))
                 } else {
-                    Text("별킷 달성 하기")
+                    Text("별킷 달성하기")
+                        .font(.custom("KNPSKkomi-Regular", size: 18))
                 }
             }
-            .padding(.horizontal, Screen.maxHeight*0.1)
-            .font(.custom("Pretendard-Regular", size: 20))
-            .padding(.vertical, Screen.maxWidth*0.05)
-            .background(Color("mainColor"))
-            .cornerRadius(40)
-            .padding()
+            .modifier(MaxWidthColoredButtonModifier(color: Color("mainColor"), cornerRadius: 15))
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing){
@@ -81,7 +78,7 @@ struct BucketDetailListView: View {
                         BucketListDetailAddView()
                     } label: {
                         Image(systemName: "plus.circle")
-                            .font(.system(size: 22, weight: .semibold))
+                            .font(.system(size: 22, weight: .light))
                     }
                 }
             }

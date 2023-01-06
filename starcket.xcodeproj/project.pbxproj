@@ -15,6 +15,8 @@
 		1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E3296711900024DBB1 /* Ex+Date.swift */; };
 		1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E5296711990024DBB1 /* Ex+String.swift */; };
 		1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */; };
+		674243652967CD3000A8A7E4 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 674243642967CD3000A8A7E4 /* Config.xcconfig */; };
+		674243672967CD7100A8A7E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 674243662967CD7100A8A7E4 /* GoogleService-Info.plist */; };
 		806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806C0A652967540D00ADE0D1 /* SoohyunTest.swift */; };
 		806C0A6C2967C3EE00ADE0D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806C0A6B2967C3EE00ADE0D1 /* GoogleService-Info.plist */; };
 		806C0A6E2967C3FA00ADE0D1 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */; };
@@ -72,8 +74,6 @@
 		C45C0B4E2966886D007BFE58 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4D2966886D007BFE58 /* FirebaseFirestore */; };
 		C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */; };
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
-		C4B2AC032967C82900EB34DF /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC022967C82900EB34DF /* Config.xcconfig */; };
-		C4B2AC052967C83800EB34DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */; };
 		C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +110,8 @@
 		1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailListView.swift; sourceTree = "<group>"; };
 		1A3AE9E3296711900024DBB1 /* Ex+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
 		1A3AE9E5296711990024DBB1 /* Ex+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
+		674243642967CD3000A8A7E4 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../Downloads/Config.xcconfig; sourceTree = "<group>"; };
+		674243662967CD7100A8A7E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		806C0A652967540D00ADE0D1 /* SoohyunTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoohyunTest.swift; sourceTree = "<group>"; };
 		806C0A6B2967C3EE00ADE0D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
@@ -168,8 +170,6 @@
 		C45C0B4429665D73007BFE58 /* ETC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETC.swift; sourceTree = "<group>"; };
 		C45C0B46296684C5007BFE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45C0B48296686EB007BFE58 /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
-		C4B2AC022967C82900EB34DF /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KNPSKkomi.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +261,8 @@
 		C45C0AFA296653A1007BFE58 /* starcket */ = {
 			isa = PBXGroup;
 			children = (
+				674243662967CD7100A8A7E4 /* GoogleService-Info.plist */,
+				674243642967CD3000A8A7E4 /* Config.xcconfig */,
 				C45C0B20296655BB007BFE58 /* Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
@@ -588,9 +590,9 @@
 			files = (
 				806C0A6E2967C3FA00ADE0D1 /* Config.xcconfig in Resources */,
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
-				C4B2AC052967C83800EB34DF /* GoogleService-Info.plist in Resources */,
+				674243652967CD3000A8A7E4 /* Config.xcconfig in Resources */,
+				674243672967CD7100A8A7E4 /* GoogleService-Info.plist in Resources */,
 				C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */,
-				C4B2AC032967C82900EB34DF /* Config.xcconfig in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
