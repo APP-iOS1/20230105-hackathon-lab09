@@ -16,6 +16,7 @@
 		1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */; };
 		806C0A6029673DD100ADE0D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806C0A5F29673DD100ADE0D1 /* GoogleService-Info.plist */; };
 		806C0A6229673DFB00ADE0D1 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 806C0A6129673DFB00ADE0D1 /* Config.xcconfig */; };
+		806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806C0A652967540D00ADE0D1 /* SoohyunTest.swift */; };
 		80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3A2966A45F00737B64 /* GoogleSignIn */; };
 		80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3C2966A45F00737B64 /* GoogleSignInSwift */; };
 		80826E3F2966A55000737B64 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E3E2966A55000737B64 /* AuthStore.swift */; };
@@ -105,6 +106,7 @@
 		1A3AE9E5296711990024DBB1 /* Ex+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
 		806C0A5F29673DD100ADE0D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		806C0A6129673DFB00ADE0D1 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		806C0A652967540D00ADE0D1 /* SoohyunTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoohyunTest.swift; sourceTree = "<group>"; };
 		80826E3E2966A55000737B64 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		80826E442966B85900737B64 /* TxtfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtfieldModifier.swift; sourceTree = "<group>"; };
 		80826E4F2966C5DA00737B64 /* SignUpAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAuthStore.swift; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B4429665D73007BFE58 /* ETC.swift */,
+				806C0A652967540D00ADE0D1 /* SoohyunTest.swift */,
 			);
 			path = ETC.;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				80826E5F2966D8CF00737B64 /* SafariView.swift in Sources */,
 				C45C0B4129665D40007BFE58 /* MyPageView.swift in Sources */,
 				958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
+				806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */,
 				958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */,
 				8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */,
 				80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */,
@@ -710,6 +714,7 @@
 		};
 		C45C0B04296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806C0A6129673DFB00ADE0D1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -770,6 +775,7 @@
 		};
 		C45C0B05296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806C0A6129673DFB00ADE0D1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -824,6 +830,7 @@
 		};
 		C45C0B07296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806C0A6129673DFB00ADE0D1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -856,6 +863,7 @@
 		};
 		C45C0B08296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806C0A6129673DFB00ADE0D1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

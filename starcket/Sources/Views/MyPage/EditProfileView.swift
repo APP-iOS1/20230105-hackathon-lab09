@@ -61,52 +61,89 @@ struct EditProfileView: View {
                 .padding(.bottom, 30)
                 .padding(.top, 30)
             
-            VStack(spacing: 5) {
+            VStack (alignment: .leading, spacing: 5) {
                 HStack {
-                    TextField("닉네임 (20자리 이내)", text: $nickName)
+                    TextField("여구름", text: $nickName)
                         .focused($isInFocusNickName)
-                        .modifier(ClearTextFieldModifier())
+                        .disableAutocorrection(true)
+                        .textInputAutocapitalization(.never)
+                        .padding(.horizontal, 20)
+                        .frame(width: 270)
                         .onChange(of: nickName) { newValue in
                             signUpAuthStore.nickNameDuplicationState = .duplicated
                         }
-                    
-                    // email 필드가 비어있지 않으면서 정규식에 적합한다면
-                    if !nickName.isEmpty {
-                        // 이메일 중복검사
-                        // 중복확인 버튼을 띄우고 사용 가능하다면 체크 아이콘 띄우고, 아니면 버튼 유지
-                        if signUpAuthStore.nickNameDuplicationState == .duplicated {
-                            Button {
-                                checkNicknameDuplicated()
-                            } label: {
-                                Text("중복 확인") // MARK: 수정자 분리 필요함.
-                                    .font(.footnote)
-                                    .foregroundColor(.accentColor)
-                                    .padding(5)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 5)
-                                            .stroke(Color.accentColor, lineWidth: 1)
-                                    )
-                                    .background(Color.white)
-                            } // Button
-                        } else if signUpAuthStore.nickNameDuplicationState == .checking{
-                            ProgressView()
-                                .progressViewStyle(CircularProgressViewStyle(tint: .black))
-                                .frame(height: 40)
-                        } else {
-                            Image(systemName: "checkmark.circle")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 20.5)
-                                .foregroundColor(.green)
-                        } // else
-                    } // if
-                } // HStack
-                .frame(height: 30) // TextField가 있는 HStack의 height 고정 <- 아이콘 크기 변경 방지
-                .padding(.trailing, 20)
-                
+//                        .overlay {
+//
+//                                //.offset(x: 50)
+//                        }
+                    Spacer()
+
+                }
                 Rectangle()
                     .modifier(TextFieldUnderLineRectangleModifier(stateTyping: isInFocusNickName))
+                    .frame(width: 270)
+                
             }
+            
+//            VStack(spacing: 5) {
+//                HStack {
+//                    TextField("여구름", text: $nickName)
+//                        .focused($isInFocusNickName)
+//                        .disableAutocorrection(true)
+//                        .textInputAutocapitalization(.never)
+//                        .font(.subheadline)
+//                        .padding(.horizontal, 20)
+//                        .onChange(of: nickName) { newValue in
+//                            signUpAuthStore.nickNameDuplicationState = .duplicated
+//                        }
+//                        .frame(minWidth: 150, maxWidth: .infinity, alignment: .leading)
+//                        //.padding(.trailing, 50)
+//
+//
+//
+//
+//
+//                    // email 필드가 비어있지 않으면서 정규식에 적합한다면
+//                    if !nickName.isEmpty {
+//                        // 이메일 중복검사
+//                        // 중복확인 버튼을 띄우고 사용 가능하다면 체크 아이콘 띄우고, 아니면 버튼 유지
+//                        if signUpAuthStore.nickNameDuplicationState == .duplicated {
+//                            Button {
+//                                checkNicknameDuplicated()
+//                            } label: {
+//                                Text("중복 확인") // MARK: 수정자 분리 필요함.
+//                                    .font(.footnote)
+//                                    .foregroundColor(.accentColor)
+//                                    .padding(5)
+//                                    .overlay(
+//                                        RoundedRectangle(cornerRadius: 5)
+//                                            .stroke(Color.accentColor, lineWidth: 1)
+//                                    )
+//                                    .background(Color.white)
+//                            } // Button
+//                        } else if signUpAuthStore.nickNameDuplicationState == .checking{
+//                            ProgressView()
+//                                .progressViewStyle(CircularProgressViewStyle(tint: .black))
+//                                .frame(height: 40)
+//                        } else {
+//                            Image(systemName: "checkmark.circle")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: 20.5)
+//                                .foregroundColor(.green)
+//                        } // else
+//
+//                    }
+//
+//
+//                } // HStack
+//                .frame(height: 30) // TextField가 있는 HStack의 height 고정 <- 아이콘 크기 변경 방지
+//                .padding(.trailing, 20)
+//
+//                Rectangle()
+//                    .modifier(TextFieldUnderLineRectangleModifier(stateTyping: isInFocusNickName))
+//                    .padding(.trailing, 140)
+//            }
             
             //MARK: - 비밀번호를 변경하는 부분
             Text("비밀번호 수정")
