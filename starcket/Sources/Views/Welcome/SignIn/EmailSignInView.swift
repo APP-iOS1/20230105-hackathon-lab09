@@ -57,6 +57,7 @@ struct EmailSignInView: View {
                         .disableAutocorrection(true)
                         .textInputAutocapitalization(.never)
                         .font(.custom("KNPSKkomi-Regular", size: 17))
+                        .foregroundColor(.black)
                     
                 }
                 .padding(.horizontal, 20)
@@ -71,14 +72,17 @@ struct EmailSignInView: View {
                         .cornerRadius(15)
                         .disableAutocorrection(true)
                         .textInputAutocapitalization(.never)
+                        .foregroundColor(.black)
+
                 }
                 .padding(.horizontal, 20)
             }
             .padding(.bottom, 70)
             //.background(.white)
             
-            Button {
-                logInWithEmailPassword()
+
+            NavigationLink {
+                ContentView()
             } label: {
                 Text("로그인하기")
                     .font(.custom("KNPSKkomi-Regular", size: 23))
@@ -89,10 +93,7 @@ struct EmailSignInView: View {
                     .background(Color("mainColor"))
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .padding(EdgeInsets(top: 5, leading: 20, bottom: 0, trailing: 20))
-            }
-
-            
-            
+            }          
         }
         .navigationTitle("이메일 로그인")
         .accentColor(.white)
@@ -132,4 +133,3 @@ struct EmailSignInView_Previews: PreviewProvider {
             .environmentObject(SignUpAuthStore())
     }
 }
-

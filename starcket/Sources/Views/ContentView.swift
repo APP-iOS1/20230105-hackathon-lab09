@@ -17,7 +17,6 @@ struct ContentView: View {
     
     
     var body: some View {
-
         ZStack{
             TabView(selection: $tabSelection) {
                 HomeView()
@@ -41,14 +40,6 @@ struct ContentView: View {
                         Text("마이페이지")
                     }.tag(3)
                 
-                
-                
-                //                // 수현 테스트용
-                //                SoohyunTest()
-                //                    .tabItem {
-                //                        Image(systemName: "star")
-                //                        Text("실험용")
-                //                    }
             }
             
             ZStack{

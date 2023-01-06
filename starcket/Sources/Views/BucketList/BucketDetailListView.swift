@@ -20,10 +20,11 @@ struct BucketDetailListView: View {
         VStack {
             ScrollView(showsIndicators: false) {
                 VStack {
-                    ForEach(bucketDetailStore.bucketDetail) { bucket in
+                    ForEach(bucketDetailStore.bucketDetail, id: \.id) { bucket in
                         NavigationLink {
                             BucketDetailView()
                         } label: {
+                            
                             HStack(alignment: .bottom) {
                                 Text(bucket.title)
                                     .font(.custom("KNPSKkomi-Regular", size: 20))
@@ -38,9 +39,8 @@ struct BucketDetailListView: View {
                                 Color("cellColor")
                             }
                             .cornerRadius(20)
+                            .padding(.top, Screen.maxWidth * 0.07)
                         }
-                        .padding(.top, Screen.maxWidth * 0.07)
-                        
                         
                     }
                     
