@@ -28,7 +28,16 @@ struct AnalyzeView: View {
     @State var year: Int = 2023
     
     var body: some View {
-        VStack{
+        VStack {
+            
+            HStack {
+                Text("연도별 별킷 달성률")
+                    .font(.title)
+                    .bold()
+                Spacer()
+            }
+            .padding(EdgeInsets(top: 35, leading: 20, bottom: 35, trailing: 20))
+            
             HStack {
                 Button {
                     year -= 1
@@ -55,10 +64,15 @@ struct AnalyzeView: View {
                         bucketStore.isLoading = false
                     }
                 } label: {
-                    Image(systemName:"arrowtriangle.left.fill")
+                    Image(systemName:"chevron.left")
+                        .font(.title2)
+                        .foregroundColor(.gray)
                 }
-                Text(String(year))
-                    .padding(.horizontal, Screen.maxWidth * 0.2)
+                
+                Text(String(year) + "년")
+                    .font(.title2)
+                    .padding(.horizontal, 20)
+                
                 Button {
                     if year < 2023 {
                         year += 1
@@ -86,14 +100,13 @@ struct AnalyzeView: View {
                         bucketStore.isLoading = false
                     }
                 } label: {
-                    Image(systemName:"arrowtriangle.right.fill")
+                    Image(systemName:"chevron.right")
+                        .font(.title2)
+                        .foregroundColor(.gray)
                 }
                 
             }
-            .font(.custom("Pretendard-Regular", size: 25))
-            .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
-            .background(.gray.opacity(0.1))
-            
+
             VStack(spacing:0){
                 GeometryReader { proxy in
                     let size = proxy.size
@@ -247,28 +260,54 @@ struct AnalyzeView: View {
                 }
                 
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            }
-            
-            
-            VStack{
-                // let percentage = Int((showingProgress / Int(total)) * 100)
-                // 예시로 progress = 0.5
-                let percentage = Int(progress * 100)
-                Text("\(percentage) % 달성")
-                    .bold()
-                //.foregroundColor(.yellow)
-                    .font(.title)
                 
-                Text(" \(Int(total))개 중에 \(Int(showingProgress))개를 달성하셨어요!!")
-                    .bold()
-                //.foregroundColor(.yellow)
-                    .font(.title)
+                
+                VStack(spacing: 8) {
+                    // let percentage = Int((showingProgress / Int(total)) * 100)
+                    // 예시로 progress = 0.5
+                    let percentage = Int(progress * 100)
+                    Text("\(percentage)% 달성!")
+                        .bold()
+                    //.foregroundColor(.yellow)
+                    
+                        .font(.system(size: 23))
+
+                    Text(" \(Int(total))개 중에 \(Int(showingProgress))개를 달성하였어요.")
+                       // .bold()
+                    //.foregroundColor(.yellow)
+                        .font(.body)
+                        .fontWeight(.light)
+                }
+                .padding(.bottom, 45)
             }
-            .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
-            .background(.gray.opacity(0.1))
+            .background(Color("cellColor"))
+            .cornerRadius(40)
+            .padding(EdgeInsets(top: 5, leading: 25, bottom: 40, trailing: 25))
+            
+            
+//            VStack{
+//                // let percentage = Int((showingProgress / Int(total)) * 100)
+//                // 예시로 progress = 0.5
+//                let percentage = Int(progress * 100)
+//                Text("\(percentage) % 달성")
+//                    //.bold()
+//                //.foregroundColor(.yellow)
+//                   .font(.title2)
+//
+//                Text(" \(Int(total))개 중에 \(Int(showingProgress))개를 달성하셨네요!")
+//                   // .bold()
+//                //.foregroundColor(.yellow)
+//                    .font(.title3)
+//            }
+//            .frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
+//            .padding(.bottom, 40)
             
             
         }
+        .font(.custom("Pretendard-Regular", size: 25))
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        //.frame(width: Screen.maxWidth,height: Screen.maxHeight / 10)
+        .background(Color("bgColor"))
         .onAppear {
             withAnimation(.linear(duration:2).repeatForever(autoreverses: true)) {
                 self.rotation = (self.rotation < 360 ? self.rotation - 30 : 0)
