@@ -46,29 +46,31 @@ struct MyPageView: View {
     var body: some View {
         NavigationStack {
             List {
-                NavigationLink {
-                    EditProfileView()
-                } label: {
-                    HStack {
-                        Image("profileStar")
-                            .resizable()
-                            .frame(width: 45, height: 42)
-                            .padding(.trailing, 15)
-                        VStack (alignment: .leading) {
-                            Spacer()
-                            
-                            
-                            Text("\(profileName)")
-                            Text("\(profileEmail)")
-                                .font(.footnote)
-                                .foregroundColor(.secondary)
-                            Spacer()
+                Section ("👤 PROFILE") {
+                    NavigationLink {
+                        EditProfileView()
+                    } label: {
+                        HStack {
+                            Image("star")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:55)
+                            VStack (alignment: .leading, spacing: 5) {
+                                Spacer()
+                                Text("\(profileName)") 
+                                    .bold()
+                                Text("\(profileEmail)") 
+                                    .font(.footnote)
+                                    .foregroundColor(.secondary)
+                                Spacer()
+                            }
+
                         }
+                        
                     }
-                    
                 }
 
-                Section (header: Text("Setting") ) {
+                Section ("⚙️ SETTINGS") {
                     HStack{
                         Text("Face ID")
                         Toggle(isOn: $faceIDToggle) { }
@@ -89,7 +91,7 @@ struct MyPageView: View {
                     }
                 } // setting section
                 
-                Section(header: Text("Other")) {
+                Section("📄 OTHERS") {
                     NavigationLink {
                         MoreView()
                     } label: {
@@ -98,7 +100,7 @@ struct MyPageView: View {
                     
                 }
                 
-                Section (header: Text("Account") ) {
+                Section ("🚪 ACCOUNT") {
 //                    NavigationLink {
 //                        EditProfileView()
 //                    } label: {
@@ -117,6 +119,7 @@ struct MyPageView: View {
 
 
             }
+            .listStyle(GroupedListStyle())
         }
         .onAppear {
             print("email : \(signUpAuthStore.currentUser?.email)")
