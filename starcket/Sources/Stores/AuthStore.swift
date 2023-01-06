@@ -145,7 +145,14 @@ class AuthStore: ObservableObject {
             GIDSignIn.sharedInstance.configuration = configuration
             GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { [unowned self] result, error in
                 guard let user = result?.user else { return }
+                let emailAddress = user.profile?.email ?? ""
+                let fullName = user.profile?.name ?? ""
+                let id = UUID().uuidString
+                self.currentUser = User(id: id, bucketId: [], detailId: [], name: fullName, email: emailAddress, isPremium: true)
+                self.registerUser(uid: id, email: emailAddress, nickname: fullName)
+                UserDefaults.standard.set(id, forKey: "userIdToken")
                 authenticateUser(for: user, with: error)
+                
                 
             }
             
@@ -169,12 +176,16 @@ class AuthStore: ObservableObject {
                 print(error.localizedDescription)
             } else {
                 let id = result?.user.uid
-                UserDefaults.standard.set(result?.user.uid, forKey: "userIdToken")
-//                self.currentUser = User(id: id, bucketId: [], detailId: [], name: id. ?? "구글 사용자", email: user?.userID ?? "구글 사용자", isPremium: true)
+                
+//                UserDefaults.standard.set(result?.user.uid, forKey: "userIdToken")
+                // self.currentUser = User(id: id ?? "", bucketId: [], detailId: [], name: user?.userID ?? "구글 사용자", email: user?.userID ?? "구글 사용자", isPremium: true)
+                //self.registerUser(uid: id ?? "", email: user?.userID ?? "구글 사용자email", nickname: user?.userID ?? "구글 사용자nickName")
+                
                 
                 // 이메일 로그인 성공 시
                 self.loginState = .success //로그인 성공 여부
                 self.state = .signIn // 로그인 상태
+                self.loginPlatform = .google
             }
         }
     }
@@ -240,6 +251,7 @@ class AuthStore: ObservableObject {
                 if await handleLoginWithKakaoTalkApp() {
                     self.loginState = .success //로그인 성공 여부
                     self.state = .signIn
+                    self.loginPlatform = .kakao
  
 //                    self.currentUser = User(id: UUID().uuidString, bucketId: [], detailId: [], name: user?.userID ?? "구글 사용자", email: user?.userID ?? "구글 사용자", isPremium: true)
                 }
@@ -250,6 +262,7 @@ class AuthStore: ObservableObject {
                 if await handleLoginWithKaKaoAccount() {
                     self.loginState = .success //로그인 성공 여부
                     self.state = .signIn
+                    self.loginPlatform = .kakao
                 }
                 
             }
@@ -264,7 +277,7 @@ class AuthStore: ObservableObject {
                             let name = user?.kakaoAccount?.profile?.nickname ?? "no nickname"
                             let email = user?.kakaoAccount?.email ?? "no email"
                             self.currentUser = User(id: UUID().uuidString , bucketId: [], detailId: [], name: name, email: email, isPremium: true)
-                            UserDefaults.standard.set(id, forKey: "userIdToken")
+//                            UserDefaults.standard.set(id, forKey: "userIdToken")
                             self.registerUser(uid: id, email: email, nickname: name)
                             //print("user?.id : \(user?.)")
                             //guard let userId = user?.id else {return}

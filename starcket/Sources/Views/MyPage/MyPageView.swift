@@ -18,6 +18,28 @@ struct MyPageView: View {
     @EnvironmentObject var authStore: AuthStore // 구글,카카오
     @EnvironmentObject var signUpAuthStore: SignUpAuthStore //이메일
     
+    var profileName: String {
+        switch authStore.loginPlatform {
+        case .email:
+            return signUpAuthStore.currentUser?.name ?? ""
+        case .kakao, .google:
+            return authStore.currentUser?.name ?? ""
+        default:
+            return "로그인해주세요"
+        }
+        
+    }
+    var profileEmail: String {
+        switch authStore.loginPlatform {
+        case .email:
+            return signUpAuthStore.currentUser?.email ?? ""
+        case .kakao, .google:
+            return authStore.currentUser?.email ?? ""
+        default:
+            return ""
+        }
+        
+    }
     
     //이거 여구름, 이메일 정리하고 나서 실제로 연결시켜서 보여줘야함
     //회원정보 수정도 해야함
@@ -35,13 +57,14 @@ struct MyPageView: View {
                                 .frame(width:55)
                             VStack (alignment: .leading, spacing: 5) {
                                 Spacer()
-                                Text("여구름") // MARK: 데이터 연동 필요
+                                Text("\(profileName)") 
                                     .bold()
-                                Text("hihistar@naver.com") // MARK: 데이터 연동 필요
+                                Text("\(profileEmail)") 
                                     .font(.footnote)
                                     .foregroundColor(.secondary)
                                 Spacer()
                             }
+
                         }
                         
                     }
@@ -111,6 +134,7 @@ struct MyPageView: View {
                     signUpAuthStore.requestUserSignOut()
                     authStore.kakaoLogout()
                     authStore.googleSignOut()
+                    authStore.loginPlatform = .none
                 }
    
         } message: {
