@@ -8,7 +8,7 @@ import Foundation
 import SwiftUI
 
 public extension View {
-    func fullBackground(imageName: String) -> some View {
+	func fullBackground(imageName: String) -> some View {
        return background(
                 Image(imageName)
                     .resizable()

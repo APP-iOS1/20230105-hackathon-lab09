@@ -33,11 +33,8 @@ struct AddStarView: View {
     // 별 버튼을 누르면 그 별의 isFloating값을 true로 해줘야함
     // shape값 넘겨줘야함 - update함수를 통해서 ?
     var body: some View {
-        VStack{
+		VStack(spacing: 0){
             HStack{
-                Text("추가할 수 있는 별이 \(waitingStarList.count)개 있습니다.")
-                    .font(.title3)
-                    .padding()
                 Spacer()
                 Button {
                     if waitingStarList.count > 0 {
@@ -61,9 +58,18 @@ struct AddStarView: View {
                 } label: {
                     waitingStarList.count == 0 ? Text("닫기") : Text("추가")
                 }
+				.font(.custom("KNPSKkomi-Regular", size: 25))
                 .padding()
 
             }
+			VStack {
+				Text("추가할 수 있는 별이 \(waitingStarList.count)개 있습니다.")
+				
+				Text("별을 추가하여 하늘로 띄워주세요!")
+			}
+			.padding(.leading, 15)
+			.font(.custom("KNPSKkomi-Regular", size: 25))
+			
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach((0..<8), id: \.self) { i in

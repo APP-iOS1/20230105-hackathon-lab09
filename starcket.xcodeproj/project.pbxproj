@@ -75,6 +75,9 @@
 		C45C0B502966886D007BFE58 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B4F2966886D007BFE58 /* FirebaseFirestoreSwift */; };
 		C45C0B522966886D007BFE58 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C45C0B512966886D007BFE58 /* FirebaseStorage */; };
 		C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */; };
+		C4B2AC092967DD3900EB34DF /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC082967DD3900EB34DF /* CustomTabView.swift */; };
+		C4B2AC0B2967E50400EB34DF /* StarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC0A2967E50400EB34DF /* StarScrollView.swift */; };
+		C4B2AC0D2967ED7D00EB34DF /* HistoryStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC0C2967ED7D00EB34DF /* HistoryStarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +174,9 @@
 		C45C0B46296684C5007BFE58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45C0B48296686EB007BFE58 /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
 		C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KNPSKkomi.otf; sourceTree = "<group>"; };
+		C4B2AC082967DD3900EB34DF /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		C4B2AC0A2967E50400EB34DF /* StarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarScrollView.swift; sourceTree = "<group>"; };
+		C4B2AC0C2967ED7D00EB34DF /* HistoryStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +404,8 @@
 			children = (
 				0CD92EFF2966CA410058F4B6 /* AddStarView.swift */,
 				0CD92F022966EDC20058F4B6 /* HomeView.swift */,
+				C4B2AC0C2967ED7D00EB34DF /* HistoryStarView.swift */,
+				C4B2AC0A2967E50400EB34DF /* StarScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -470,6 +478,7 @@
 		C45C0B3129665C5C007BFE58 /* ETC. */ = {
 			isa = PBXGroup;
 			children = (
+				C4B2AC082967DD3900EB34DF /* CustomTabView.swift */,
 				C45C0B4429665D73007BFE58 /* ETC.swift */,
 				806C0A652967540D00ADE0D1 /* SoohyunTest.swift */,
 			);
@@ -622,8 +631,10 @@
 				1AAF2E602967E34C000E49FE /* EmailSignInView.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
 				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
+				C4B2AC0D2967ED7D00EB34DF /* HistoryStarView.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
 				80826E642966E04E00737B64 /* MoreView.swift in Sources */,
+				C4B2AC092967DD3900EB34DF /* CustomTabView.swift in Sources */,
 				0CD92F0A29674A4C0058F4B6 /* Ex+View.swift in Sources */,
 				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
 				80826E612966D8CF00737B64 /* SignUpView.swift in Sources */,
@@ -655,6 +666,7 @@
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
 				80826E3F2966A55000737B64 /* AuthStore.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
+				C4B2AC0B2967E50400EB34DF /* StarScrollView.swift in Sources */,
 				80826E622966D8CF00737B64 /* TermType.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
 				0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */,

@@ -45,7 +45,6 @@ struct BucketListView: View {
                             .font(.title2)
                             .foregroundColor(.gray)
                     }
-                    
                 }
                 .font(.custom("KNPSKkomi-Regular", size: 25))
                 .padding(.vertical, Screen.maxWidth * 0.07)
@@ -106,6 +105,9 @@ struct BucketListView: View {
                 Task {
                     UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
                     (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+					bucketStore.bucket.sort {
+						$0.isCheck != $1.isCheck
+					}
                     bucketStore.isLoading = false
                 }
             }

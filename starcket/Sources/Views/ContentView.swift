@@ -8,41 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State private var tabSelection: Int = 0
+	@State private var darkmodeToggle: Bool = true
+	@ObservedObject var tabbarManager = TabBarManager.shared
+  @State var animate = false
+  @State var endSplash = false
     
-    
-    @State private var tabSelection: Int = 0
-    
-    @State var animate = false
-    @State var endSplash = false
-    
-    
-    var body: some View {
-        ZStack{
-            TabView(selection: $tabSelection) {
-                HomeView()
-                    .tabItem {
-                        Image(systemName: "house.fill")
-                        Text("별킷")
-                    }.tag(0)
-                BucketListView()
-                    .tabItem {
-                        Image(systemName: "checklist.checked")
-                        Text("리스트")
-                    }.tag(1)
-                AnalyzeView()
-                    .tabItem {
-                        Image(systemName: "chart.bar.xaxis")
-                        Text("분석")
-                    }.tag(2)
-                MyPageView()
-                    .tabItem {
-                        Image(systemName: "person.crop.circle.fill")
-                        Text("마이페이지")
-                    }.tag(3)
-                
-            }
-            
-            ZStack{
+	var body: some View {
+  ZStack {
+		ZStack {
+			ZStack {
+				switch tabbarManager.curTabSelection {
+				case .home:
+					StarScrollView(darkmodeToggle: $darkmodeToggle)
+				case .list:
+					BucketListView()
+				case .chart:
+					AnalyzeView()
+				case .profile:
+					MyPageView(darkmodeToggle: $darkmodeToggle)
+				}
+			} // ZStack
+			.padding(.bottom, tabbarManager.bottomPadding)
+			
+			if (tabbarManager.showTabBar) {
+				CustomTabView(darkmodeToggle: $darkmodeToggle)
+			}
+		} // ZStack
+		.edgesIgnoringSafeArea(.bottom)
+		.preferredColorScheme(darkmodeToggle ? .dark : .light)
+                ZStack{
                 
                 Image("LargeStar")
                     .resizable()
@@ -57,13 +52,9 @@ struct ContentView: View {
             .ignoresSafeArea()
             .onAppear(perform: animateSplash)
             .opacity(endSplash ? 0 : 1)
-            
-
-        }
-    }
-    
-    
-    func animateSplash(){
+   }
+   
+   func animateSplash(){
         DispatchQueue.main.asyncAfter(deadline: .now()){
             withAnimation(Animation.easeOut(duration: 0.45)){
                 animate.toggle()
@@ -75,10 +66,6 @@ struct ContentView: View {
     }
 }
 
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+	static var previews: some View {
+		ContentView()
+	}
