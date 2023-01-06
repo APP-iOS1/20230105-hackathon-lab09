@@ -9,10 +9,11 @@ import SwiftUI
 
 struct BucketListDetailAddView: View {
     @StateObject var bucketDetailStore = BucketDetailStore()
-//    var bucketId: String
-
+//    var bucket: Bucket
+    
     @State var date = Date()
     @State var imagePickerVisible: Bool = false
+//    @State var onImage: Bool = false
     @State var selectedImage: Image? = Image(systemName: "plus.app")
     
     @State private var title: String = ""
@@ -24,9 +25,7 @@ struct BucketListDetailAddView: View {
 //                Spacer()
                 
                 Text("나의 별킷 달성을 기록해주세요.")
-                //                .font(.custom("Pretendard-Bold", size: 23))
-                    .font(.system(size: 25, weight: .bold))
-                    .bold()
+                    .font(.custom("KNPSKkomi-Regular", size: 28, relativeTo: .title))
                     .padding(.top, 30)
                 
                 
@@ -34,8 +33,7 @@ struct BucketListDetailAddView: View {
                 HStack{
                     Text("🗓️ 달성한 날짜")
                     //                    .font(.custom("Pretendard-Regular", size: 20))
-                        .font(.system(size: 20, weight: .regular))
-                        .bold()
+                        .font(.custom("KNPSKkomi-Regular", size: 20, relativeTo: .title))
                     
                     Spacer()
                     
@@ -49,29 +47,36 @@ struct BucketListDetailAddView: View {
                 .padding(.vertical, 5)
                 
                 
-                Button{
-                    imagePickerVisible.toggle()
-                }label: {
-                    if imagePickerVisible {
-                        selectedImage?
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 308, height: 254)
-                            .foregroundColor(Color("mainColor"))
-                    } else {
-                        selectedImage?
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200)
-                            .foregroundColor(Color("mainColor"))
-                        
+                RoundedRectangle(cornerRadius: 20)
+                    .frame(width: 330, height: 270)
+                    .foregroundColor(Color("cellColor"))
+                    .overlay{
+                        Button{
+                            imagePickerVisible.toggle()
+                            
+                        }label: {
+                            if imagePickerVisible {
+                                selectedImage?
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 308, height: 254)
+                            } else {
+                                selectedImage?
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50)
+                                    .foregroundColor(Color("mainColor"))
+                                
+                            }
+                        }
                     }
-                    
-                }
-                .padding()
+                    .padding()
+                
                 
                 TextField("제목을 입력해주세요", text: $title)
-                    .padding()
+                    .font(.custom("KNPSKkomi-Regular", size: 20, relativeTo: .title))
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
                     .padding(.horizontal)
                 
                 Rectangle()
@@ -80,9 +85,11 @@ struct BucketListDetailAddView: View {
                     .padding(.horizontal, 20)
                 
                 TextField("내용을 입력해주세요", text: $content, axis: .vertical)
-                    .lineLimit(6, reservesSpace: true)
+                    .font(.custom("KNPSKkomi-Regular", size: 20, relativeTo: .title))
                     .padding(.horizontal, 30)
-                    .padding(.vertical)
+                    .padding(.vertical, 10)
+                    .lineLimit(6, reservesSpace: true)
+                    
                 
 //                Spacer()
                 
@@ -90,15 +97,16 @@ struct BucketListDetailAddView: View {
                     //                bucketDetailStore.createBucketDetail(BucketDetail(id: <#T##String#>, userId: <#T##String#>, bucketId: <#T##String#>, title: <#T##String#>, content: <#T##String#>, image: <#T##String#>, rating: <#T##Int#>, updatedAt: <#T##Date#>, createdAt: <#T##Date#>))
                 } label: {
                     Text("작성완료")
-                        .font(.system(size: 20, weight: .bold))
-                        .bold()
+                        .font(.custom("KNPSKkomi-Regular", size: 20, relativeTo: .title))
+                        .foregroundColor(.black)
                 }
-                .background{
-                    RoundedRectangle(cornerRadius: 20)
-                        .frame(width: 354, height: 50)
-                        .foregroundColor(Color("mainColor"))
-                    
-                }
+                .modifier(MaxWidthColoredButtonModifier(cornerRadius: 20))
+//                .background{
+//                    RoundedRectangle(cornerRadius: 20)
+//                        .frame(width: 354, height: 50)
+//                        .foregroundColor(Color("mainColor"))
+//
+//                }
                 
                 Spacer()
                 

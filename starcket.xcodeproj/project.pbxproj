@@ -15,12 +15,11 @@
 		1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E3296711900024DBB1 /* Ex+Date.swift */; };
 		1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E5296711990024DBB1 /* Ex+String.swift */; };
 		1A3AE9E7296721FE0024DBB1 /* BucketDetailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */; };
-		674243652967CD3000A8A7E4 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 674243642967CD3000A8A7E4 /* Config.xcconfig */; };
-		674243672967CD7100A8A7E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 674243662967CD7100A8A7E4 /* GoogleService-Info.plist */; };
+		1AAF2E5A2967E109000E49FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF2E592967E109000E49FE /* GoogleService-Info.plist */; };
+		1AAF2E5C2967E1B2000E49FE /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */; };
+		1AAF2E5E2967E302000E49FE /* SignInView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF2E5D2967E302000E49FE /* SignInView2.swift */; };
+		1AAF2E602967E34C000E49FE /* EmailSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF2E5F2967E34C000E49FE /* EmailSignInView.swift */; };
 		806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806C0A652967540D00ADE0D1 /* SoohyunTest.swift */; };
-		806C0A6C2967C3EE00ADE0D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806C0A6B2967C3EE00ADE0D1 /* GoogleService-Info.plist */; };
-		806C0A6E2967C3FA00ADE0D1 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */; };
-		806C0A702967C82900ADE0D1 /* SignInView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806C0A6F2967C82900ADE0D1 /* SignInView2.swift */; };
 		80826E3B2966A45F00737B64 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3A2966A45F00737B64 /* GoogleSignIn */; };
 		80826E3D2966A45F00737B64 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80826E3C2966A45F00737B64 /* GoogleSignInSwift */; };
 		80826E3F2966A55000737B64 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80826E3E2966A55000737B64 /* AuthStore.swift */; };
@@ -110,12 +109,11 @@
 		1A3AE9E12966ECCE0024DBB1 /* BucketDetailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailListView.swift; sourceTree = "<group>"; };
 		1A3AE9E3296711900024DBB1 /* Ex+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
 		1A3AE9E5296711990024DBB1 /* Ex+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Ex+String.swift"; sourceTree = "<group>"; };
-		674243642967CD3000A8A7E4 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../Downloads/Config.xcconfig; sourceTree = "<group>"; };
-		674243662967CD7100A8A7E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1AAF2E592967E109000E49FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		1AAF2E5D2967E302000E49FE /* SignInView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView2.swift; sourceTree = "<group>"; };
+		1AAF2E5F2967E34C000E49FE /* EmailSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInView.swift; sourceTree = "<group>"; };
 		806C0A652967540D00ADE0D1 /* SoohyunTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoohyunTest.swift; sourceTree = "<group>"; };
-		806C0A6B2967C3EE00ADE0D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		806C0A6F2967C82900ADE0D1 /* SignInView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInView2.swift; path = "../../../../../../../../.Trash/20230105-hackathon-lab09 오전 11.48.35/starcket/Sources/Views/Welcome/SignIn/SignInView2.swift"; sourceTree = "<group>"; };
 		80826E3E2966A55000737B64 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
 		80826E442966B85900737B64 /* TxtfieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxtfieldModifier.swift; sourceTree = "<group>"; };
 		80826E4F2966C5DA00737B64 /* SignUpAuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAuthStore.swift; sourceTree = "<group>"; };
@@ -261,13 +259,12 @@
 		C45C0AFA296653A1007BFE58 /* starcket */ = {
 			isa = PBXGroup;
 			children = (
-				674243662967CD7100A8A7E4 /* GoogleService-Info.plist */,
-				674243642967CD3000A8A7E4 /* Config.xcconfig */,
 				C45C0B20296655BB007BFE58 /* Info.plist */,
+				1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */,
+				1AAF2E592967E109000E49FE /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
-				806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */,
 				C45C0AFF296653A3007BFE58 /* Assets.xcassets */,
 				C45C0B01296653A3007BFE58 /* Preview Content */,
 			);
@@ -415,7 +412,8 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3629665D17007BFE58 /* SignInView.swift */,
-				806C0A6F2967C82900ADE0D1 /* SignInView2.swift */,
+				1AAF2E5D2967E302000E49FE /* SignInView2.swift */,
+				1AAF2E5F2967E34C000E49FE /* EmailSignInView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -588,12 +586,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				806C0A6E2967C3FA00ADE0D1 /* Config.xcconfig in Resources */,
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
-				674243652967CD3000A8A7E4 /* Config.xcconfig in Resources */,
-				674243672967CD7100A8A7E4 /* GoogleService-Info.plist in Resources */,
+				1AAF2E5C2967E1B2000E49FE /* Config.xcconfig in Resources */,
 				C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
+				1AAF2E5A2967E109000E49FE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +616,7 @@
 				1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */,
 				C45C0B4529665D73007BFE58 /* ETC.swift in Sources */,
 				1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */,
+				1AAF2E602967E34C000E49FE /* EmailSignInView.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
 				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
@@ -637,7 +635,7 @@
 				C45C0B49296686EB007BFE58 /* BucketStore.swift in Sources */,
 				80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
-				806C0A702967C82900ADE0D1 /* SignInView2.swift in Sources */,
+				1AAF2E5E2967E302000E49FE /* SignInView2.swift in Sources */,
 				1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */,
 				80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */,
 				80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */,
@@ -732,7 +730,7 @@
 		};
 		C45C0B04296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */;
+			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -793,7 +791,7 @@
 		};
 		C45C0B05296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */;
+			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -848,7 +846,7 @@
 		};
 		C45C0B07296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */;
+			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -881,7 +879,7 @@
 		};
 		C45C0B08296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 806C0A6D2967C3F900ADE0D1 /* Config.xcconfig */;
+			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
