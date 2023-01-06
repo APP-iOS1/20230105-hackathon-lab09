@@ -44,11 +44,11 @@ struct MoreView: View {
                 .presentationDetents([.fraction(0.93)])
         }
         .sheet(isPresented: $termsofServiceSheet, onDismiss: didDismiss) {
-            //WebSheetView(url: place.siteUrl)
+            WebSheetView(url: "https://glacier-bucket-5c2.notion.site/17a3bda8c13c4bed96dd47049af958cb")
         }
         .sheet(isPresented: $opensourceSheet) {
 
-            //WebSheetView(url: place.siteUrl)
+            WebSheetView(url: "https://glacier-bucket-5c2.notion.site/97fd3519c1ca4bd98201a6dbc208b58e")
         }
         .navigationTitle("기타")
     }

@@ -31,6 +31,21 @@ struct TextFieldUnderLineRectangleModifier: ViewModifier {
     }
 }
 
+
+// MARK: - Modifier : 배경이 회색인 TextField 속성
+struct GrayBackgroundTextFieldModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding()
+            .background(Color("bgColor"))
+            .cornerRadius(15)
+            .disableAutocorrection(true)
+            .textInputAutocapitalization(.never)
+            .font(.subheadline)
+    }
+}
+
+
 struct TextFieldClearButton: ViewModifier {
     @Binding var text: String
     

@@ -35,9 +35,17 @@ struct ContentView: View {
                         Image(systemName: "person.crop.circle.fill")
                         Text("마이페이지")
                     }.tag(3)
+
+                
+        
+                // 수현 테스트용
+                SoohyunTest()
+                    .tabItem {
+                        Image(systemName: "star")
+                        Text("실험용")
+                    }
             }
             
-            //수현 테스트용
 //            if UserDefaults.standard.object(forKey: "userIdToken") != nil {
 //                TabView(selection: $tabSelection) {
 //                    HomeView()
@@ -69,7 +77,9 @@ struct ContentView: View {
 //        }
     }
 }
-    
+
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
             ContentView()

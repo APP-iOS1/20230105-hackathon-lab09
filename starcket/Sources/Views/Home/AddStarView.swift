@@ -21,8 +21,11 @@ struct AddStarView: View {
     // 추가될 별들의 좌표 정보
     @Binding var starPosArr: [CGSize]  // 드래그한 만큼 별이 움직이도록 binding에 사용될 Property
     @Binding var accumlatedOffset: [CGSize] // 지금까지 드래그 된 값을 기록하고 있는 Property
+    // 버튼이 눌렸을때 선택된 별의 크기를 키워주기 위한 프로퍼티
+    @State private var buttonText: String = ""
+    @State private var selectedStar: Int?
     
-    @State private var selectedStar: Int = 0
+    
     
     //@Binding var waitingStarList: [Bucket]
     // waitingStarList = [11.1, 12.1, 12.23, 12.25]
@@ -37,21 +40,26 @@ struct AddStarView: View {
                     .padding()
                 Spacer()
                 Button {
-                    starPosArr.append(.zero)
-                    accumlatedOffset.append(.zero)
-                    waitingStarList[0].shape = selectedStar
-                    // 버튼 누르면 별 추가
+                    if waitingStarList.count > 0 {
+                        starPosArr.append(.zero)
+                        accumlatedOffset.append(.zero)
+                        waitingStarList[0].shape = selectedStar ?? 0
+                        // 버튼 누르면 별 추가
+                        
+                        // db 업데이트
+                        bucketStore.updateStar(waitingStarList[0].id, isFloat: true, shape: selectedStar ?? 0)
+                        print(waitingStarList[0].shape)
+                        
+                        starList.append(waitingStarList[0])
+                        waitingStarList.removeFirst()
+                        addingStar.wrappedValue.dismiss()
+                    }else{
+                        addingStar.wrappedValue.dismiss()
+                    }
                     
-                    // db 업데이트
-                    bucketStore.updateStar(waitingStarList[0].id, isFloat: true, shape: selectedStar)
-                    print(waitingStarList[0].shape)
                     
-                    starList.append(waitingStarList[0])
-                    waitingStarList.removeFirst()
-                    
-                    addingStar.wrappedValue.dismiss()
                 } label: {
-                    Text("확인")
+                    waitingStarList.count == 0 ? Text("닫기") : Text("추가")
                 }
                 .padding()
 
@@ -63,10 +71,19 @@ struct AddStarView: View {
                             // 여기서 별 종류 선택 -> 별종류 업데이트
                             selectedStar = i
                         } label: {
-                            Image("\(i)")
-                                .resizable()
-                                .frame(width: 100, height: 100)
+                            if i == selectedStar{
+                                Image("\(i)")
+                                    .resizable()
+                                    .frame(width: 130, height: 130)
+                            }else{
+                                Image("\(i)")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .padding(15)
+                            }
                         }
+                        .disabled(waitingStarList.count <= 0)
+                      
                     }
                 }
             }

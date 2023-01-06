@@ -24,13 +24,26 @@ struct HomeView: View {
                     ForEach(Array(starList.enumerated()), id:\.offset) { idx, star in
                         Image("\(star.shape)")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 50, height: 50)
                             .offset(bucketStore.starPosArr[idx])
                             .gesture(
                                 DragGesture()
                                     .onChanged { value in
                                         bucketStore.starPosArr[idx].width = accumlatedOffset[idx].width + value.translation.width
                                         bucketStore.starPosArr[idx].height = accumlatedOffset[idx].height + value.translation.height
+                                                                                
+                                        if bucketStore.starPosArr[idx].width >= 160.0 {
+                                            bucketStore.starPosArr[idx].width = 160.0
+                                        }else if bucketStore.starPosArr[idx].width <= -160.0 {
+                                            bucketStore.starPosArr[idx].width = -160.0
+                                        }
+                                        
+                                        if bucketStore.starPosArr[idx].height <= -360.0 {
+                                            bucketStore.starPosArr[idx].height = -360.0
+                                        }else if bucketStore.starPosArr[idx].height >= 320.0 {
+                                            bucketStore.starPosArr[idx].height = 320.0
+                                        }
+                                        
                                     }
                                     .onEnded { value in
                                         accumlatedOffset[idx].width += value.translation.width
@@ -67,6 +80,7 @@ struct HomeView: View {
                     accumlatedOffset = Array(repeating: CGSize(width: 0, height: 0), count: bucketStore.starPosArr.count)
                 }
             }
+            .fullBackground(imageName: "Dark")
             //2. 여기서 .onDisappear 해서 보내기
         }
     }

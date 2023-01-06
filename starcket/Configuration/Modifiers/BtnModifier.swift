@@ -92,7 +92,7 @@ struct MaxWidthColoredButtonModifier: ViewModifier {
 	func body(content: Content) -> some View {
 		content
 			.font(.subheadline)
-			.foregroundColor(.white)
+			.foregroundColor(.black)
 			.padding()
 			.frame(maxWidth: .infinity)
 			.bold()
