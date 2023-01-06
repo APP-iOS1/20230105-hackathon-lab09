@@ -73,6 +73,8 @@
 		C4B2AC052967C83800EB34DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */; };
 		C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */; };
 		C4B2AC092967DD3900EB34DF /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC082967DD3900EB34DF /* CustomTabView.swift */; };
+		C4B2AC0B2967E50400EB34DF /* StarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC0A2967E50400EB34DF /* StarScrollView.swift */; };
+		C4B2AC0D2967ED7D00EB34DF /* HistoryStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC0C2967ED7D00EB34DF /* HistoryStarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +169,8 @@
 		C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KNPSKkomi.otf; sourceTree = "<group>"; };
 		C4B2AC082967DD3900EB34DF /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		C4B2AC0A2967E50400EB34DF /* StarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarScrollView.swift; sourceTree = "<group>"; };
+		C4B2AC0C2967ED7D00EB34DF /* HistoryStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +397,8 @@
 			children = (
 				0CD92EFF2966CA410058F4B6 /* AddStarView.swift */,
 				0CD92F022966EDC20058F4B6 /* HomeView.swift */,
+				C4B2AC0C2967ED7D00EB34DF /* HistoryStarView.swift */,
+				C4B2AC0A2967E50400EB34DF /* StarScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -615,6 +621,7 @@
 				1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
 				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
+				C4B2AC0D2967ED7D00EB34DF /* HistoryStarView.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
 				80826E642966E04E00737B64 /* MoreView.swift in Sources */,
 				C4B2AC092967DD3900EB34DF /* CustomTabView.swift in Sources */,
@@ -647,6 +654,7 @@
 				C45C0B2829665ACC007BFE58 /* BucketDetail.swift in Sources */,
 				80826E3F2966A55000737B64 /* AuthStore.swift in Sources */,
 				C45C0B24296659A1007BFE58 /* Bucket.swift in Sources */,
+				C4B2AC0B2967E50400EB34DF /* StarScrollView.swift in Sources */,
 				80826E622966D8CF00737B64 /* TermType.swift in Sources */,
 				C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */,
 				0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */,

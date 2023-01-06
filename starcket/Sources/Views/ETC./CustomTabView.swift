@@ -39,7 +39,7 @@ struct CustomTabView: View {
 			ZStack {
 				HStack(alignment: .center, spacing: 8) {
 					ForEach(0..<4) { index in
-						Spacer().frame(width: Screen.maxWidth * 0.02)
+						Spacer().frame(width: Screen.maxWidth * 0.03)
 						
 						Button {
 							switch index {
@@ -54,11 +54,11 @@ struct CustomTabView: View {
 							case 1:
 								TabButton(darkmodeToggle: $darkmodeToggle, isSelection: tabbarManager.curTabSelection == .list, name: "리스트", systemName: "checklist.checked", systemNameByNotSelected: "checklist.checked")
 							case 2: TabButton(darkmodeToggle: $darkmodeToggle, isSelection: tabbarManager.curTabSelection == .chart, name: "분석", systemName: "chart.bar.xaxis", systemNameByNotSelected: "chart.bar.xaxis")
-							default: TabButton(darkmodeToggle: $darkmodeToggle, isSelection: tabbarManager.curTabSelection == .profile, name: "마이프로필", systemName: "person.crop.circle.fill", systemNameByNotSelected: "person.crop.circle.fill")
+							default: TabButton(darkmodeToggle: $darkmodeToggle, isSelection: tabbarManager.curTabSelection == .profile, name: "프로필", systemName: "person.crop.circle.fill", systemNameByNotSelected: "person.crop.circle.fill")
 							}
 						} // Button
 						
-						Spacer().frame(width: Screen.maxWidth * 0.02)
+						Spacer().frame(width: Screen.maxWidth * 0.03)
 					} //ForEach
 					.frame(height: Screen.maxHeight * 0.10)
 					.edgesIgnoringSafeArea(.all)

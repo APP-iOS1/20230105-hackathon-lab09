@@ -40,7 +40,6 @@ struct BucketListView: View {
                     } label: {
                         Image(systemName:"arrowtriangle.right.fill")
                     }
-                    
                 }
                 .font(.custom("Pretendard-Regular", size: 25))
                 .padding(.vertical, Screen.maxWidth * 0.07)

@@ -16,11 +16,11 @@ struct HomeView: View {
    // 드래그한 만큼 별이 움직이도록 binding에 사용될 Property
     @State private var accumlatedOffset: [CGSize] = [] // 지금까지 드래그 된 값을 기록하고 있는 Property
     @State private var showingAddView: Bool = false
-	@State private var moveScrollView: Bool = true // true: up image, false: down image
 	@Binding var darkmodeToggle: Bool
-	
+	@Binding var tabSelection: Int
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack{
                 ZStack {
                     ForEach(Array(starList.enumerated()), id:\.offset) { idx, star in
@@ -66,9 +66,9 @@ struct HomeView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
 					HStack {
 						Button {
-							moveScrollView.toggle()
+							tabSelection = 0
 						} label: {
-							Image(systemName: moveScrollView ? "arrow.up" : "arrow.down")
+							Image(systemName: "arrow.up")
 								.foregroundColor(.white)
 						}
 						
@@ -76,10 +76,10 @@ struct HomeView: View {
 							showingAddView.toggle()
 						} label: {
 							Image(systemName: "line.3.horizontal")
-								.foregroundColor(moveScrollView ? .white : .clear)
+								.foregroundColor(.white)
 						}
-						.disabled(!moveScrollView)
 					}
+					.padding(.trailing, 15)
 				}
             }
             .onAppear {
@@ -99,8 +99,9 @@ struct HomeView: View {
         }
     }
 }
+
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-		HomeView(darkmodeToggle: .constant(false))
+		HomeView(darkmodeToggle: .constant(false), tabSelection: .constant(1))
     }
 }

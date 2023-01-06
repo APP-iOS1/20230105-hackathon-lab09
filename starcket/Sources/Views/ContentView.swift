@@ -19,7 +19,8 @@ struct ContentView: View {
 			ZStack {
 				switch tabbarManager.curTabSelection {
 				case .home:
-					HomeView(darkmodeToggle: $darkmodeToggle)
+					StarScrollView(darkmodeToggle: $darkmodeToggle)
+//					HomeView(darkmodeToggle: $darkmodeToggle)
 				case .list:
 					BucketListView()
 				case .chart:
