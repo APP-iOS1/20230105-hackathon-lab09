@@ -2,15 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIBackgroundModes</key>
-	<array/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<false/>
-	</dict>
-	<key>KAKAO_NAVTIVE_APP_KEY</key>
-	<string>${KAKAO_NAVTIVE_APP_KEY}</string>
 	<key> LSApplicationQueriesSchemes</key>
 	<array>
 		<string>kakaokompassauth</string>
@@ -35,8 +26,16 @@
 			</array>
 		</dict>
 	</array>
+	<key>KAKAO_NAVTIVE_APP_KEY</key>
+	<string>${KAKAO_NAVTIVE_APP_KEY}</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>KNPSKkomi.otf</string>
 		<string>Pretendard-Regular.otf</string>
 		<string>Pretendard-Black.otf</string>
 		<string>Pretendard-Medium.otf</string>
@@ -47,5 +46,7 @@
 		<string>Pretendard-ExtraLight.otf</string>
 		<string>Pretendard-SemiBold.otf</string>
 	</array>
+	<key>UIBackgroundModes</key>
+	<array/>
 </dict>
 </plist>
