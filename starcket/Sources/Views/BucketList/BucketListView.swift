@@ -26,7 +26,7 @@ struct BucketListView: View {
                     } label: {
                         Image(systemName:"arrowtriangle.left.fill")
                     }
-                    Text(String(year))
+                    Text("\(String(year))년")
                         .padding(.horizontal, Screen.maxWidth * 0.2)
                     Button {
                         if year < 2023 {
@@ -55,7 +55,7 @@ struct BucketListView: View {
                         VStack(alignment: .leading, spacing: 20) {
                             ForEach(bucketStore.bucket) { bucket in
                                 NavigationLink {
-                                    BucketDetailListView(bucketStore: bucketStore, detailIdList: bucket.detailId, bucketId: bucket.id, year: $year)
+                                    BucketDetailListView(bucketStore: bucketStore, detailIdList: bucket.detailId, bucketId: bucket.id, year: $year, isCheck: bucket.isCheck)
                                 } label: {
                                     HStack {
                                         Text(bucket.icon)
@@ -70,6 +70,7 @@ struct BucketListView: View {
                                     .background {
                                         bucket.isCheck ? Color("19") : Color("cellColor")
                                     }
+                                    .foregroundColor(bucket.isCheck ? Color("font2") : Color("font1"))
                                     .cornerRadius(20)
                                     //                                .overlay(RoundedRectangle(cornerRadius: 30)
                                     //                                    .stroke(bucket.isCheck ? Color.black : Color.gray, lineWidth: 3))
