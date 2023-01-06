@@ -72,6 +72,7 @@
 		C4B2AC032967C82900EB34DF /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC022967C82900EB34DF /* Config.xcconfig */; };
 		C4B2AC052967C83800EB34DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */; };
 		C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */; };
+		C4B2AC092967DD3900EB34DF /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B2AC082967DD3900EB34DF /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		C4B2AC022967C82900EB34DF /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		C4B2AC042967C83800EB34DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4B2AC062967C85100EB34DF /* KNPSKkomi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KNPSKkomi.otf; sourceTree = "<group>"; };
+		C4B2AC082967DD3900EB34DF /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +463,7 @@
 		C45C0B3129665C5C007BFE58 /* ETC. */ = {
 			isa = PBXGroup;
 			children = (
+				C4B2AC082967DD3900EB34DF /* CustomTabView.swift */,
 				C45C0B4429665D73007BFE58 /* ETC.swift */,
 				806C0A652967540D00ADE0D1 /* SoohyunTest.swift */,
 			);
@@ -614,6 +617,7 @@
 				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
 				C45C0B3729665D17007BFE58 /* SignInView.swift in Sources */,
 				80826E642966E04E00737B64 /* MoreView.swift in Sources */,
+				C4B2AC092967DD3900EB34DF /* CustomTabView.swift in Sources */,
 				0CD92F0A29674A4C0058F4B6 /* Ex+View.swift in Sources */,
 				C45C0B3F29665D37007BFE58 /* AnalyzeView.swift in Sources */,
 				80826E612966D8CF00737B64 /* SignUpView.swift in Sources */,

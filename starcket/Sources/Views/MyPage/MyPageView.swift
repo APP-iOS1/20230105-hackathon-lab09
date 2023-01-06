@@ -11,13 +11,14 @@ import Firebase
 
 struct MyPageView: View {
     @State var faceIDToggle: Bool = false
-    @State var darkmodeToggle: Bool = false
     @State var pushNotiToggle: Bool = false
     @State var logOutAlert: Bool = false
-    
+	@Binding var darkmodeToggle: Bool
+
     @EnvironmentObject var authStore: AuthStore // 구글,카카오
     @EnvironmentObject var signUpAuthStore: SignUpAuthStore //이메일
-    
+	@Environment(\.colorScheme) var colorScheme
+
     var profileName: String {
         switch authStore.loginPlatform {
         case .email:
@@ -78,6 +79,13 @@ struct MyPageView: View {
                     HStack {
                         Text("다크 모드")
                         Toggle(isOn: $darkmodeToggle) { }
+							.onChange(of: darkmodeToggle) { value in
+								if value {
+//									colorScheme = .dark
+								} else {
+//									colorScheme = .light
+								}
+							}
                     }//hstack
                     HStack {
                         Text("푸시 알림")
@@ -147,7 +155,7 @@ struct MyPageView: View {
 
 struct MyPageView_Previews: PreviewProvider {
     static var previews: some View {
-        MyPageView()
+		MyPageView(darkmodeToggle: .constant(false))
             .environmentObject(AuthStore())
             .environmentObject(SignUpAuthStore())
     }

@@ -103,6 +103,9 @@ struct BucketListView: View {
                 Task {
                     UserDefaults.standard.set("7BW5aWDlcP8E5NllOu4f", forKey: "userIdToken")
                     (bucketStore.bucket, bucketStore.bucketIdList) = try await bucketStore.fetchBucketByDate(String(year))
+					bucketStore.bucket.sort {
+						$0.isCheck != $1.isCheck
+					}
                     bucketStore.isLoading = false
                 }
             }
