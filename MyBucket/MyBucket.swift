@@ -189,7 +189,7 @@ struct MyBucketEntryView : View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .edgesIgnoringSafeArea(.all)
-        .background( colorScheme == .dark ? .blue : .black)
+        .background( colorScheme == .dark ? .black : .blue)
         
         
     }
