@@ -12,9 +12,10 @@ struct PurchasePremiumView: View {
         //List
         VStack {
             Text("별킷리스트 Premium을 경험해보세요")
-                .font(.custom("Pretendard-ExtraBold", size: 22))
+                .font(.title2)
                 .bold()
                 .padding(.top, 20)
+                .padding(.bottom, 2)
             Text("2900원으로 아래 서비스들을 이용하실 수 있습니다.")
                 .font(.custom("Pretendard-ExtraBold", size: 15))
                 .padding(.bottom, 40)
