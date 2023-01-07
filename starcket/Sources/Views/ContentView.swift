@@ -54,15 +54,17 @@ struct ContentView: View {
 			.opacity(endSplash ? 0 : 1)
 		}
 		
-		func animateSplash(){
-			DispatchQueue.main.asyncAfter(deadline: .now()){
-				withAnimation(Animation.easeOut(duration: 0.45)){
-					animate.toggle()
-				}
-				withAnimation(Animation.easeOut(duration: 0.45)){
-					endSplash.toggle()
-				}
-			}
-		}
 	}
+    
+    func animateSplash(){
+        DispatchQueue.main.asyncAfter(deadline: .now()){
+            withAnimation(Animation.easeOut(duration: 0.45)){
+                animate.toggle()
+            }
+            withAnimation(Animation.easeOut(duration: 0.45)){
+                endSplash.toggle()
+            }
+        }
+    }
+    
 }

@@ -58,10 +58,11 @@ struct MyPageView: View {
                                 .frame(width:55)
                             VStack (alignment: .leading, spacing: 5) {
                                 Spacer()
-                                Text("\(profileName)") 
+                                Text("\(profileName)")
+                                    .font(.custom("KNPSKkomi-Regular", size: 22))
                                     .bold()
                                 Text("\(profileEmail)") 
-                                    .font(.footnote)
+                                    .font(.custom("KNPSKkomi-Regular", size: 22))
                                     .foregroundColor(.secondary)
                                 Spacer()
                             }
@@ -74,10 +75,12 @@ struct MyPageView: View {
                 Section ("⚙️ SETTINGS") {
                     HStack{
                         Text("Face ID")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                         Toggle(isOn: $faceIDToggle) { }
                     }
                     HStack {
                         Text("다크 모드")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                         Toggle(isOn: $darkmodeToggle) { }
 							.onChange(of: darkmodeToggle) { value in
 								if value {
@@ -89,6 +92,7 @@ struct MyPageView: View {
                     }//hstack
                     HStack {
                         Text("푸시 알림")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                         Toggle(isOn: $pushNotiToggle) { }
                     }//hstack
                     
@@ -96,6 +100,7 @@ struct MyPageView: View {
                         PurchasePremiumView()
                     } label: {
                         Text("프리미엄 구매")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                     }
                 } // setting section
                 
@@ -104,6 +109,7 @@ struct MyPageView: View {
                         MoreView()
                     } label: {
                         Text("기타")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                     }
                     
                 }
@@ -119,6 +125,7 @@ struct MyPageView: View {
                         logOutAlert.toggle()
                     } label: {
                         Text("로그아웃")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                             .foregroundColor(.red)
 
                     }

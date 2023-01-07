@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD060C92967F97A00859684 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0CD060C82967F97A00859684 /* Config.xcconfig */; };
+		0CD060CB2967F98300859684 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CD060CA2967F98300859684 /* GoogleService-Info.plist */; };
 		0CD92F012966EC5E0058F4B6 /* AddStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92EFF2966CA410058F4B6 /* AddStarView.swift */; };
 		0CD92F032966EDC20058F4B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92F022966EDC20058F4B6 /* HomeView.swift */; };
 		0CD92F0A29674A4C0058F4B6 /* Ex+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD92F0929674A4C0058F4B6 /* Ex+View.swift */; };
@@ -47,10 +49,6 @@
 		958419F92966FE5100CF4682 /* Ex+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0B1529665555007BFE58 /* Ex+Color.swift */; };
 		958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB52966A9EE0028B466 /* WaterWave.swift */; };
 		958FCFB82966BAC50028B466 /* DeepWaterWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958FCFB72966BAC50028B466 /* DeepWaterWave.swift */; };
-		95CD7F942967E44F00DA70E7 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 95CD7F922967E44F00DA70E7 /* Config.xcconfig */; };
-		95CD7F952967E44F00DA70E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95CD7F932967E44F00DA70E7 /* GoogleService-Info.plist */; };
-		95CD7F972967E48400DA70E7 /* SignInView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD7F962967E48400DA70E7 /* SignInView2.swift */; };
-		95CD7F992967E4FC00DA70E7 /* EmailSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CD7F982967E4FC00DA70E7 /* EmailSignInView.swift */; };
 		95CD7F9B2967E8D800DA70E7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CD7F9A2967E8D800DA70E7 /* Launch Screen.storyboard */; };
 		C45C0AFC296653A1007BFE58 /* starcketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFB296653A1007BFE58 /* starcketApp.swift */; };
 		C45C0AFE296653A1007BFE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45C0AFD296653A1007BFE58 /* ContentView.swift */; };
@@ -105,6 +103,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0CD060C82967F97A00859684 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		0CD060CA2967F98300859684 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CD92EFF2966CA410058F4B6 /* AddStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStarView.swift; sourceTree = "<group>"; };
 		0CD92F022966EDC20058F4B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0CD92F0929674A4C0058F4B6 /* Ex+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+View.swift"; sourceTree = "<group>"; };
@@ -138,10 +138,7 @@
 		958419EB2966FC9D00CF4682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958FCFB52966A9EE0028B466 /* WaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWave.swift; sourceTree = "<group>"; };
 		958FCFB72966BAC50028B466 /* DeepWaterWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepWaterWave.swift; sourceTree = "<group>"; };
-		95CD7F922967E44F00DA70E7 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		95CD7F932967E44F00DA70E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../googlInfo/hackerton/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95CD7F962967E48400DA70E7 /* SignInView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView2.swift; sourceTree = "<group>"; };
-		95CD7F982967E4FC00DA70E7 /* EmailSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInView.swift; sourceTree = "<group>"; };
 		95CD7F9A2967E8D800DA70E7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C45C0AF8296653A1007BFE58 /* starcket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starcket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45C0AFB296653A1007BFE58 /* starcketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starcketApp.swift; sourceTree = "<group>"; };
@@ -211,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3A29665D24007BFE58 /* HomeView.swift */,
+				95CD7F962967E48400DA70E7 /* SignInView2.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -267,9 +265,9 @@
 		C45C0AFA296653A1007BFE58 /* starcket */ = {
 			isa = PBXGroup;
 			children = (
+				0CD060CA2967F98300859684 /* GoogleService-Info.plist */,
+				0CD060C82967F97A00859684 /* Config.xcconfig */,
 				C45C0B20296655BB007BFE58 /* Info.plist */,
-				1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */,
-				1AAF2E592967E109000E49FE /* GoogleService-Info.plist */,
 				C45C0AFB296653A1007BFE58 /* starcketApp.swift */,
 				C45C0B0E296654A0007BFE58 /* Configuration */,
 				C45C0B0D2966548C007BFE58 /* Sources */,
@@ -423,8 +421,6 @@
 			isa = PBXGroup;
 			children = (
 				C45C0B3629665D17007BFE58 /* SignInView.swift */,
-				1AAF2E5D2967E302000E49FE /* SignInView2.swift */,
-				1AAF2E5F2967E34C000E49FE /* EmailSignInView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -599,10 +595,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95CD7F9B2967E8D800DA70E7 /* Launch Screen.storyboard in Resources */,
+				0CD060C92967F97A00859684 /* Config.xcconfig in Resources */,
 				C45C0B03296653A3007BFE58 /* Preview Assets.xcassets in Resources */,
 				C4B2AC072967C85200EB34DF /* KNPSKkomi.otf in Resources */,
 				C45C0B00296653A3007BFE58 /* Assets.xcassets in Resources */,
-				1AAF2E5A2967E109000E49FE /* GoogleService-Info.plist in Resources */,
+				0CD060CB2967F98300859684 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +625,6 @@
 				1A3AE9E4296711900024DBB1 /* Ex+Date.swift in Sources */,
 				C45C0B4529665D73007BFE58 /* ETC.swift in Sources */,
 				1A3AE9DA2966AE460024DBB1 /* BucketListAddView.swift in Sources */,
-				1AAF2E602967E34C000E49FE /* EmailSignInView.swift in Sources */,
 				C45C0B3D29665D2B007BFE58 /* BucketListView.swift in Sources */,
 				1A3AE9E02966D7F70024DBB1 /* BucketDetailStore.swift in Sources */,
 				C4B2AC0D2967ED7D00EB34DF /* HistoryStarView.swift in Sources */,
@@ -649,7 +645,6 @@
 				C45C0B49296686EB007BFE58 /* BucketStore.swift in Sources */,
 				80826E502966C5DA00737B64 /* SignUpAuthStore.swift in Sources */,
 				C45C0B47296684C5007BFE58 /* User.swift in Sources */,
-				1AAF2E5E2967E302000E49FE /* SignInView2.swift in Sources */,
 				1A3AE9E6296711990024DBB1 /* Ex+String.swift in Sources */,
 				80826E6A2966E4A100737B64 /* EditProfileView.swift in Sources */,
 				80826E6C2966E7EE00737B64 /* SendOpinion.swift in Sources */,
@@ -659,7 +654,6 @@
 				958419ED2966FC9D00CF4682 /* MyBucket.intentdefinition in Sources */,
 				806C0A662967540D00ADE0D1 /* SoohyunTest.swift in Sources */,
 				958FCFB62966A9EE0028B466 /* WaterWave.swift in Sources */,
-				95CD7F972967E48400DA70E7 /* SignInView2.swift in Sources */,
 				8B43771B29671C52002D4AAB /* BucketDetailView.swift in Sources */,
 				80826E602966D8CF00737B64 /* SignUpStep1View.swift in Sources */,
 				80826E452966B85900737B64 /* TxtfieldModifier.swift in Sources */,
@@ -746,7 +740,6 @@
 		};
 		C45C0B04296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -807,7 +800,6 @@
 		};
 		C45C0B05296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -862,7 +854,6 @@
 		};
 		C45C0B07296653A3007BFE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -896,7 +887,6 @@
 		};
 		C45C0B08296653A3007BFE58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AAF2E5B2967E1B2000E49FE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

@@ -54,7 +54,7 @@ struct EditProfileView: View {
     var body: some View{
         VStack{
             Text("닉네임 수정")
-                .font(.title3)
+                .font(.custom("KNPSKkomi-Regular", size: 22))
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
@@ -130,7 +130,7 @@ struct EditProfileView: View {
                 
                 //MARK: - 비밀번호를 변경하는 부분
                 Text("비밀번호 수정")
-                    .font(.title3)
+                    .font(.custom("KNPSKkomi-Regular", size: 22))
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
@@ -261,6 +261,7 @@ struct EditProfileView: View {
                         checkPassword = ""
                     } label: {
                         Text("비밀번호 변경하기")
+                            .font(.custom("KNPSKkomi-Regular", size: 22))
                             .modifier(MaxWidthColoredButtonModifier(color: Color("mainColor"), cornerRadius: 15))
                     }
                     // alert: 입력한 두 비밀번호가 일치하지 않을 때 알림

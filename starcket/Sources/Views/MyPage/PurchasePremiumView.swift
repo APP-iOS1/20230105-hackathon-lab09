@@ -12,12 +12,12 @@ struct PurchasePremiumView: View {
         //List
         VStack {
             Text("별킷리스트 Premium을 경험해보세요")
-                .font(.title2)
+                .font(.custom("KNPSKkomi-Regular", size: 30))
                 .bold()
                 .padding(.top, 20)
                 .padding(.bottom, 2)
             Text("2900원으로 아래 서비스들을 이용하실 수 있습니다.")
-                .font(.custom("Pretendard-ExtraBold", size: 15))
+                .font(.custom("KNPSKkomi-Regular", size: 22))
                 .padding(.bottom, 40)
             
             Image("preminumStar")
@@ -31,7 +31,7 @@ struct PurchasePremiumView: View {
                         .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("다양한 별 모양 이미지")
-                        .font(.custom("Pretendard-ExtraBold", size: 20))
+                        .font(.custom("KNPSKkomi-Regular", size: 22))
             
                     Spacer()
                 }
@@ -42,7 +42,7 @@ struct PurchasePremiumView: View {
                         .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("다양한 테마와 시즌 한정 테마")
-                        .font(.custom("Pretendard-ExtraBold", size: 20))
+                        .font(.custom("KNPSKkomi-Regular", size: 22))
             
                     Spacer()
                 } .padding(.bottom, 10)
@@ -53,7 +53,7 @@ struct PurchasePremiumView: View {
                         .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("사진 첨부")
-                        .font(.custom("Pretendard-ExtraBold", size: 20))
+                        .font(.custom("KNPSKkomi-Regular", size: 22))
             
                     Spacer()
                 } .padding(.bottom, 10)
@@ -63,7 +63,7 @@ struct PurchasePremiumView: View {
                         .frame(width: 36, height: 36)
                         .padding(.trailing, 10)
                     Text("앱 잠금 기능")
-                        .font(.custom("Pretendard-ExtraBold", size: 20))
+                        .font(.custom("KNPSKkomi-Regular", size: 22))
             
                     Spacer()
                 } .padding(.bottom, 10)
@@ -77,7 +77,7 @@ struct PurchasePremiumView: View {
                 
             } label: {
                 Text("이용 중")
-                    .font(.subheadline)
+                    .font(.custom("KNPSKkomi-Regular", size: 25))
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
