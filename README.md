@@ -207,7 +207,8 @@
 
 | <img src="./image/splash.gif" width="180"/> |  <img src="./image/signIn.gif" width="180"/>  |  <img src="./image/signUp.gif" width="180"/> | <img src="./image/home.gif" width="180"/> | <img src="./image/mapView.gif" width="180"/> |
 | :-: | :-: | :-: | :-: | :-: |
-| Splash | 로그인 | 회원가입 | 추천맛집(홈) | MapView(ver1) |
+| 달성한 버킷리스트 밤하늘
+ | 로그인 | 회원가입 | 추천맛집(홈) | MapView(ver1) |
 
 ## 🤝 협업 방법
 ### 코드 컨벤션
@@ -281,4 +282,4 @@ feat/etc/faceID
 - 홍수만 : 짧은 시간이지만 완성도 있는 앱 만들기. 재밌게 하는 게 좋긴 한데 여러분들이 원하신다면 맞추겠습니다.
 
 ## 라이센스
-Machacha is available under the MIT license. See the [LICENSE](https://github.com/APPSCHOOL1-REPO/20230105-hackathon-lab09/blob/main/LICENSE) file for more info.
+starcket is available under the MIT license. See the [LICENSE](https://github.com/APPSCHOOL1-REPO/20230105-hackathon-lab09/blob/main/LICENSE) file for more info.
