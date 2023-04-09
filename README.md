@@ -7,14 +7,20 @@
 
 ## ⚖️ 앱 소개
 
-<p align="center"><img src="https://user-images.githubusercontent.com/48436020/210718413-ce5838c7-36ba-46ff-bed7-09857f4b70f8.png" width=30%></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/48436020/230769200-e694b76d-7078-4066-9554-7a0464ec4e3d.png" width=30%></p>
+
+### 소개
+
+```
+해 마다 버킷리스트 작성을 돕고 해마다 버킷리스트를 기록하여 나의 버킷리스트 달성율을 보여주는 서비스
+```
 
 ### 필요성
 
 ```
 - 새해가 시작되면서 작년을 되돌아보거나 앞으로의 1년을 계획할 기회가 많지 않다.
 - 한 해를 보내면서 연초에 계획한 일들을 하나둘씩 실천하고 있는지에 대한 여부도 확인하기 쉽지 않다.
-- 시간은 기다려주지 않으므로 **내가 살아가면서 이뤄가고 싶은 것들을 정리하고 기록**해 나갈 필요가 있다.
+- 시간은 기다려주지 않으므로 '내가 살아가면서 이뤄가고 싶은 것들을 정리하고 기록'해 나갈 필요가 있다.
 ```
 
 ### 특징
@@ -119,7 +125,7 @@
 <summary>1. 카카오톡 로그인을 위한 사전작업</summary>
 <div markdown="1">
 
-- **config** 파일을 **Tteokbokking** 폴더에 추가한다.
+- **config** 파일을 **Starcket** 폴더에 추가한다.
     - config.xcconfig 파일 안에는 KAKAO_NAVTIVE_APP_KEY // 네이티브 앱 키가 들어있다.
     
 <br>
@@ -132,7 +138,7 @@
 
 <br>
 
-- <img src = "https://user-images.githubusercontent.com/105197393/208857521-1d9f5cce-64c6-4903-953e-0da5e36efb5a.png" width="20"> **Tteokbokking**
+- <img src = "https://user-images.githubusercontent.com/105197393/208857521-1d9f5cce-64c6-4903-953e-0da5e36efb5a.png" width="20"> **Starcket**
     - PROJECT의 Info
         - Configurations의 각각 Debug, Release 안에 있는 2개의 파일 모두 Config로 설정
             <img src = "https://user-images.githubusercontent.com/105197393/208858999-fdd802ae-944d-4a31-bb27-fc8e3b422575.png">
@@ -154,7 +160,7 @@
     - plist 추가 후 REVERSED_CLIENT_ID의 값을 복사
 <br>
 
-- <img src = "https://user-images.githubusercontent.com/105197393/208857521-1d9f5cce-64c6-4903-953e-0da5e36efb5a.png" width="20"> **Tteokbokking**
+- <img src = "https://user-images.githubusercontent.com/105197393/208857521-1d9f5cce-64c6-4903-953e-0da5e36efb5a.png" width="20"> **Starcket**
     - TARGETS의 Info
         - URL Types를 펼쳐 URL Schemes에 **REVERSED_CLIENT_ID**이 들어 있는지 확인
 </div>
@@ -188,18 +194,20 @@
 <br>
 
 ## 💻 주요기능
+- 달성한 버킷리스트 밤하늘
+- 버킷리스트 목록
+- 버킷리스트 달성율
+- 마이페이지 (계정 관리, 다크모드)
+- 위젯 기능
 
 ## 📱 스크린샷
 <Blockquote>
 실제 앱 구동화면입니다
 </Blockquote>
-<!-- 
+
 | <img src="./image/splash.gif" width="180"/> |  <img src="./image/signIn.gif" width="180"/>  |  <img src="./image/signUp.gif" width="180"/> | <img src="./image/home.gif" width="180"/> | <img src="./image/mapView.gif" width="180"/> |
 | :-: | :-: | :-: | :-: | :-: |
 | Splash | 로그인 | 회원가입 | 추천맛집(홈) | MapView(ver1) |
-| <img src="./image/search.gif" width="180"/> | <img src="./image/registerSearch.gif" width="180"/> | <img src="./image/registerSnackStore.gif" width="180"/> | <img src="./image/bookmark.gif" width="180"/> | <img src="./image/profile.gif" width="180"/> |
-| 검색 | 리뷰 등록 | 포장마차 등록 | 찜 | 내정보 |
-<br/> -->
 
 ## 🤝 협업 방법
 ### 코드 컨벤션
@@ -272,20 +280,5 @@ feat/etc/faceID
 - 이지연 : **재밌게** 해커톤 끝내기. 포폴에 적을 정도의 수준 (높은 완성도). 디자인 & 컨셉. 앱의 확실한 정체성 설정
 - 홍수만 : 짧은 시간이지만 완성도 있는 앱 만들기. 재밌게 하는 게 좋긴 한데 여러분들이 원하신다면 맞추겠습니다.
 
-## 👣 후기
-- 김건형 : 
-- 김수현 :
-- 박민주 : 
-- 박희경 :
-- 신현준 : 재미있는 시간이었다. 동작은 했지만, 깔끔한 코드는 작성하지 못했다. 추가적인, 독서로 깔끔하게 코딩하는 법을 연습하자.
-- 윤소희 :  
-- 이지연 : 
-- 홍수만 : 
-
-## 📄 Docs
-<details>
-<summary> 문서정리 </summary>
-<div markdown="1">
-
-</div>
-</details>
+## 라이센스
+Machacha is available under the MIT license. See the [LICENSE](https://github.com/APPSCHOOL1-REPO/20230105-hackathon-lab09/blob/main/LICENSE) file for more info.
