@@ -200,19 +200,20 @@
 - 마이페이지 (계정 관리, 다크모드)
 - 위젯 기능
 
-<!--
+
 
 ## 📱 스크린샷
 <Blockquote>
 실제 앱 구동화면입니다
 </Blockquote>
 
-| <img src="./image/splash.gif" width="180"/> |  <img src="./image/signIn.gif" width="180"/>  |  <img src="./image/signUp.gif" width="180"/> | <img src="./image/home.gif" width="180"/> | <img src="./image/mapView.gif" width="180"/> |
-| :-: | :-: | :-: | :-: | :-: |
-| 달성한 버킷리스트 밤하늘
- | 로그인 | 회원가입 | 추천맛집(홈) | MapView(ver1) |
+| <img src="https://github.com/sohee120/sohee_algorithm/assets/84320522/6e34fbde-7b09-4464-8595-cb8e8c9ee514" width="180"/> |  <img src="https://github.com/sohee120/sohee_algorithm/assets/84320522/62766b50-ecc6-4feb-9775-a2b27fecfafa" width="180"/>  |  <img src="https://github.com/sohee120/sohee_algorithm/assets/84320522/6a6630da-95f1-4729-899a-e67007ed53c0" width="180"/> | <img src="https://github.com/sohee120/sohee_algorithm/assets/84320522/137d1e57-d43b-433d-bec9-8c51ae5bf196" width="180"/> | 
+| :-: | :-: | :-: | :-: |
+| 스플래시 화면 | 달성한 버킷리스트 밤하늘 | 버킷리스트 목록 | 버킷리스트 달성률 |
+|  | <img src="https://github.com/sohee120/sohee_algorithm/assets/84320522/5e4f10f3-2972-4dd8-8929-70a417ea2879" width="180"/> |  | <img src="https://github.com/sohee120/sohee_algorithm/assets/84320522/8fcae352-ba68-44d3-a21a-99cf8e38f9c1" width="180"/> |
+| | 드래그 제스처 | | 애니메이션 |
 
--->
+
 
 ## 🤝 협업 방법
 ### 코드 컨벤션
